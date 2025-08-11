@@ -1,0 +1,18 @@
+
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
+
+find_package(OpenGL REQUIRED)
+
+file(GLOB_RECURSE ENGINE_SOURCES CONFIGURE_DEPENDS 
+	"${CMAKE_CURRENT_SOURCE_DIR}/*.cpp"
+	"${CMAKE_CURRENT_SOURCE_DIR}/*.h"
+)
+
+add_library(GameEngine STATIC ${ENGINE_SOURCES})
+
+target_include_directories(GameEngine PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+
+target_link_libraries(GameEngine PRIVATE glfw glad OpenGL::GL imgui glm)
