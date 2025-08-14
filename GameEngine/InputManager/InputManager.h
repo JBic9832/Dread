@@ -12,9 +12,9 @@ public:
 	InputManager(EventSystem& eventSystem);
 
 	// Was the key pressed
-	bool GetKeyDown();
+	static bool GetKeyDown(int key);
 	// Is the key being held
-	bool GetKey();
+	static bool GetKey(int key);
 
 	void ProcessInput(const Event& e);
 
@@ -23,6 +23,7 @@ private:
 
 private:
 	static std::map<int, bool> s_Keys;
+	static std::map<int, bool> s_Triggered;
 
 };
 

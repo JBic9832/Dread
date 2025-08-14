@@ -43,19 +43,31 @@
 },
 {
   "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
+  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Renderer/Framebuffer.cpp",
+  "file": "/home/joseph/coding/cpp/dread/GameEngine/Renderer/Framebuffer.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o"
+},
+{
+  "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
   "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Renderer/Renderer.cpp",
   "file": "/home/joseph/coding/cpp/dread/GameEngine/Renderer/Renderer.cpp",
   "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o"
 },
 {
   "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/main.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/main.cpp",
-  "file": "/home/joseph/coding/cpp/dread/GameEngine/main.cpp",
-  "output": "GameEngine/CMakeFiles/GameEngine.dir/main.cpp.o"
+  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.cpp",
+  "file": "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o"
+},
+{
+  "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
+  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.cpp",
+  "file": "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o"
 },
 {
   "directory": "/home/joseph/coding/cpp/dread/build/Sandbox",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -std=gnu++23 -o CMakeFiles/Sandbox.dir/Game.cpp.o -c /home/joseph/coding/cpp/dread/Sandbox/Game.cpp",
+  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -std=gnu++23 -o CMakeFiles/Sandbox.dir/Game.cpp.o -c /home/joseph/coding/cpp/dread/Sandbox/Game.cpp",
   "file": "/home/joseph/coding/cpp/dread/Sandbox/Game.cpp",
   "output": "Sandbox/CMakeFiles/Sandbox.dir/Game.cpp.o"
 },

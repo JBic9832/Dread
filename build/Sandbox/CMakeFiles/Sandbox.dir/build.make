@@ -98,6 +98,7 @@ bin/Sandbox: Sandbox/CMakeFiles/Sandbox.dir/build.make
 bin/Sandbox: Sandbox/CMakeFiles/Sandbox.dir/compiler_depend.ts
 bin/Sandbox: GameEngine/libGameEngine.a
 bin/Sandbox: ThirdParty/glad/libglad.a
+bin/Sandbox: ThirdParty/glfw-3.4/src/libglfw3.a
 bin/Sandbox: /usr/lib/libGLX.so
 bin/Sandbox: /usr/lib/libOpenGL.so
 bin/Sandbox: ThirdParty/imgui/libimgui.a

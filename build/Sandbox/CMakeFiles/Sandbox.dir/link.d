@@ -5,6 +5,7 @@
   CMakeFiles/Sandbox.dir/Game.cpp.o \
   ../GameEngine/libGameEngine.a \
   ../ThirdParty/glad/libglad.a \
+  ../ThirdParty/glfw-3.4/src/libglfw3.a \
   /usr/lib/libGLX.so \
   /usr/lib/libOpenGL.so \
   ../ThirdParty/imgui/libimgui.a \
@@ -56,6 +57,8 @@ CMakeFiles/Sandbox.dir/Game.cpp.o:
 ../GameEngine/libGameEngine.a:
 
 ../ThirdParty/glad/libglad.a:
+
+../ThirdParty/glfw-3.4/src/libglfw3.a:
 
 /usr/lib/libGLX.so:
 

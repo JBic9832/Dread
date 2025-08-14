@@ -4,23 +4,17 @@
 #include <GLFW/glfw3.h>
 
 #include <vector>
+#include "VertexArray.h"
+
+namespace Dread {
 
 class Renderer {
 public:
 	Renderer();
 	~Renderer(){};
 
-	void DrawTriangle();
-
 private:
 	void initializeGlad();
-	void loadTriangle();
-
-private:
-	const std::vector<float> verts = {
-		 0.0f,  0.5f, 0.0f,
-		 0.5f, -0.5f, 0.0f,
-		-0.5f, -0.5f, 0.0f
-	};
-	unsigned int vao;
 };
+
+}

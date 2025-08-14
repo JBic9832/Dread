@@ -211,6 +211,12 @@ GameEngine/CMakeFiles/GameEngine.dir/Core/EntryPoint.cpp.o: \
  /home/joseph/coding/cpp/dread/GameEngine/Renderer/Renderer.h \
  /home/joseph/coding/cpp/dread/ThirdParty/glad/include/glad/glad.h \
  /home/joseph/coding/cpp/dread/ThirdParty/glad/include/KHR/khrplatform.h \
+ /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.h \
+ /home/joseph/coding/cpp/dread/GameEngine/Renderer/TriangleTest.h \
+ /home/joseph/coding/cpp/dread/GameEngine/InputManager/InputManager.h \
+ /usr/include/c++/15.1.1/map /usr/include/c++/15.1.1/bits/stl_tree.h \
+ /usr/include/c++/15.1.1/bits/stl_map.h \
+ /usr/include/c++/15.1.1/bits/stl_multimap.h \
  /home/joseph/coding/cpp/dread/GameEngine/Core/Logger.h \
  /home/joseph/coding/cpp/dread/GameEngine/spdlog/spdlog.h \
  /home/joseph/coding/cpp/dread/GameEngine/spdlog/common.h \
@@ -314,9 +320,6 @@ GameEngine/CMakeFiles/GameEngine.dir/Core/EntryPoint.cpp.o: \
  /home/joseph/coding/cpp/dread/GameEngine/spdlog/pattern_formatter-inl.h \
  /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/fmt_helper.h \
  /home/joseph/coding/cpp/dread/GameEngine/spdlog/mdc.h \
- /usr/include/c++/15.1.1/map /usr/include/c++/15.1.1/bits/stl_tree.h \
- /usr/include/c++/15.1.1/bits/stl_map.h \
- /usr/include/c++/15.1.1/bits/stl_multimap.h \
  /home/joseph/coding/cpp/dread/GameEngine/spdlog/sinks/sink.h \
  /home/joseph/coding/cpp/dread/GameEngine/spdlog/sinks/sink-inl.h \
  /home/joseph/coding/cpp/dread/GameEngine/spdlog/sinks/ansicolor_sink.h \

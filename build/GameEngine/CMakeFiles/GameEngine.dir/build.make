@@ -170,10 +170,24 @@ GameEngine/CMakeFiles/GameEngine.dir/InputManager/InputManager.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/InputManager/InputManager.cpp.s"
 	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joseph/coding/cpp/dread/GameEngine/InputManager/InputManager.cpp -o CMakeFiles/GameEngine.dir/InputManager/InputManager.cpp.s
 
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o: GameEngine/CMakeFiles/GameEngine.dir/flags.make
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o: /home/joseph/coding/cpp/dread/GameEngine/Renderer/Framebuffer.cpp
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o: GameEngine/CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o"
+	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o -MF CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o.d -o CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Renderer/Framebuffer.cpp
+
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.i"
+	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joseph/coding/cpp/dread/GameEngine/Renderer/Framebuffer.cpp > CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.i
+
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.s"
+	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joseph/coding/cpp/dread/GameEngine/Renderer/Framebuffer.cpp -o CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.s
+
 GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o: GameEngine/CMakeFiles/GameEngine.dir/flags.make
 GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o: /home/joseph/coding/cpp/dread/GameEngine/Renderer/Renderer.cpp
 GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o: GameEngine/CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o"
 	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o -MF CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o.d -o CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Renderer/Renderer.cpp
 
 GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.i: cmake_force
@@ -184,19 +198,33 @@ GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.s"
 	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joseph/coding/cpp/dread/GameEngine/Renderer/Renderer.cpp -o CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.s
 
-GameEngine/CMakeFiles/GameEngine.dir/main.cpp.o: GameEngine/CMakeFiles/GameEngine.dir/flags.make
-GameEngine/CMakeFiles/GameEngine.dir/main.cpp.o: /home/joseph/coding/cpp/dread/GameEngine/main.cpp
-GameEngine/CMakeFiles/GameEngine.dir/main.cpp.o: GameEngine/CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object GameEngine/CMakeFiles/GameEngine.dir/main.cpp.o"
-	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GameEngine/CMakeFiles/GameEngine.dir/main.cpp.o -MF CMakeFiles/GameEngine.dir/main.cpp.o.d -o CMakeFiles/GameEngine.dir/main.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/main.cpp
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o: GameEngine/CMakeFiles/GameEngine.dir/flags.make
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o: /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.cpp
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o: GameEngine/CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o"
+	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o -MF CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o.d -o CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.cpp
 
-GameEngine/CMakeFiles/GameEngine.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/main.cpp.i"
-	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joseph/coding/cpp/dread/GameEngine/main.cpp > CMakeFiles/GameEngine.dir/main.cpp.i
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.i"
+	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.cpp > CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.i
 
-GameEngine/CMakeFiles/GameEngine.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/main.cpp.s"
-	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joseph/coding/cpp/dread/GameEngine/main.cpp -o CMakeFiles/GameEngine.dir/main.cpp.s
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.s"
+	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.cpp -o CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.s
+
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o: GameEngine/CMakeFiles/GameEngine.dir/flags.make
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o: /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.cpp
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o: GameEngine/CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o"
+	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o -MF CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o.d -o CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.cpp
+
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.i"
+	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.cpp > CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.i
+
+GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.s"
+	cd /home/joseph/coding/cpp/dread/build/GameEngine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.cpp -o CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.s
 
 # Object files for target GameEngine
 GameEngine_OBJECTS = \
@@ -207,8 +235,10 @@ GameEngine_OBJECTS = \
 "CMakeFiles/GameEngine.dir/Event/EventListener.cpp.o" \
 "CMakeFiles/GameEngine.dir/Event/EventSystem.cpp.o" \
 "CMakeFiles/GameEngine.dir/InputManager/InputManager.cpp.o" \
+"CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o" \
 "CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o" \
-"CMakeFiles/GameEngine.dir/main.cpp.o"
+"CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o" \
+"CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o"
 
 # External object files for target GameEngine
 GameEngine_EXTERNAL_OBJECTS =
@@ -220,11 +250,13 @@ GameEngine/libGameEngine.a: GameEngine/CMakeFiles/GameEngine.dir/Core/Window.cpp
 GameEngine/libGameEngine.a: GameEngine/CMakeFiles/GameEngine.dir/Event/EventListener.cpp.o
 GameEngine/libGameEngine.a: GameEngine/CMakeFiles/GameEngine.dir/Event/EventSystem.cpp.o
 GameEngine/libGameEngine.a: GameEngine/CMakeFiles/GameEngine.dir/InputManager/InputManager.cpp.o
+GameEngine/libGameEngine.a: GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o
 GameEngine/libGameEngine.a: GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o
-GameEngine/libGameEngine.a: GameEngine/CMakeFiles/GameEngine.dir/main.cpp.o
+GameEngine/libGameEngine.a: GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o
+GameEngine/libGameEngine.a: GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o
 GameEngine/libGameEngine.a: GameEngine/CMakeFiles/GameEngine.dir/build.make
 GameEngine/libGameEngine.a: GameEngine/CMakeFiles/GameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libGameEngine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libGameEngine.a"
 	cd /home/joseph/coding/cpp/dread/build/GameEngine && $(CMAKE_COMMAND) -P CMakeFiles/GameEngine.dir/cmake_clean_target.cmake
 	cd /home/joseph/coding/cpp/dread/build/GameEngine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GameEngine.dir/link.txt --verbose=$(VERBOSE)
 

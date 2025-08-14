@@ -299,6 +299,30 @@ InputManager/InputManager.cpp.s:
 	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/InputManager/InputManager.cpp.s
 .PHONY : InputManager/InputManager.cpp.s
 
+Renderer/Framebuffer.o: Renderer/Framebuffer.cpp.o
+.PHONY : Renderer/Framebuffer.o
+
+# target to build an object file
+Renderer/Framebuffer.cpp.o:
+	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o
+.PHONY : Renderer/Framebuffer.cpp.o
+
+Renderer/Framebuffer.i: Renderer/Framebuffer.cpp.i
+.PHONY : Renderer/Framebuffer.i
+
+# target to preprocess a source file
+Renderer/Framebuffer.cpp.i:
+	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.i
+.PHONY : Renderer/Framebuffer.cpp.i
+
+Renderer/Framebuffer.s: Renderer/Framebuffer.cpp.s
+.PHONY : Renderer/Framebuffer.s
+
+# target to generate assembly for a file
+Renderer/Framebuffer.cpp.s:
+	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.s
+.PHONY : Renderer/Framebuffer.cpp.s
+
 Renderer/Renderer.o: Renderer/Renderer.cpp.o
 .PHONY : Renderer/Renderer.o
 
@@ -323,29 +347,53 @@ Renderer/Renderer.cpp.s:
 	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.s
 .PHONY : Renderer/Renderer.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+Renderer/VertexArray.o: Renderer/VertexArray.cpp.o
+.PHONY : Renderer/VertexArray.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/main.cpp.o
-.PHONY : main.cpp.o
+Renderer/VertexArray.cpp.o:
+	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o
+.PHONY : Renderer/VertexArray.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+Renderer/VertexArray.i: Renderer/VertexArray.cpp.i
+.PHONY : Renderer/VertexArray.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/main.cpp.i
-.PHONY : main.cpp.i
+Renderer/VertexArray.cpp.i:
+	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.i
+.PHONY : Renderer/VertexArray.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+Renderer/VertexArray.s: Renderer/VertexArray.cpp.s
+.PHONY : Renderer/VertexArray.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/main.cpp.s
-.PHONY : main.cpp.s
+Renderer/VertexArray.cpp.s:
+	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.s
+.PHONY : Renderer/VertexArray.cpp.s
+
+Renderer/VertexBuffer.o: Renderer/VertexBuffer.cpp.o
+.PHONY : Renderer/VertexBuffer.o
+
+# target to build an object file
+Renderer/VertexBuffer.cpp.o:
+	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o
+.PHONY : Renderer/VertexBuffer.cpp.o
+
+Renderer/VertexBuffer.i: Renderer/VertexBuffer.cpp.i
+.PHONY : Renderer/VertexBuffer.i
+
+# target to preprocess a source file
+Renderer/VertexBuffer.cpp.i:
+	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.i
+.PHONY : Renderer/VertexBuffer.cpp.i
+
+Renderer/VertexBuffer.s: Renderer/VertexBuffer.cpp.s
+.PHONY : Renderer/VertexBuffer.s
+
+# target to generate assembly for a file
+Renderer/VertexBuffer.cpp.s:
+	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.s
+.PHONY : Renderer/VertexBuffer.cpp.s
 
 # Help Target
 help:
@@ -377,12 +425,18 @@ help:
 	@echo "... InputManager/InputManager.o"
 	@echo "... InputManager/InputManager.i"
 	@echo "... InputManager/InputManager.s"
+	@echo "... Renderer/Framebuffer.o"
+	@echo "... Renderer/Framebuffer.i"
+	@echo "... Renderer/Framebuffer.s"
 	@echo "... Renderer/Renderer.o"
 	@echo "... Renderer/Renderer.i"
 	@echo "... Renderer/Renderer.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Renderer/VertexArray.o"
+	@echo "... Renderer/VertexArray.i"
+	@echo "... Renderer/VertexArray.s"
+	@echo "... Renderer/VertexBuffer.o"
+	@echo "... Renderer/VertexBuffer.i"
+	@echo "... Renderer/VertexBuffer.s"
 .PHONY : help
 
 

@@ -74,6 +74,7 @@ GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o: \
  /usr/include/c++/15.1.1/bits/uses_allocator.h \
  /usr/include/c++/15.1.1/bits/uses_allocator_args.h \
  /usr/include/c++/15.1.1/tuple /usr/include/c++/15.1.1/bits/formatfwd.h \
+ /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.h \
  /home/joseph/coding/cpp/dread/GameEngine/Core/Logger.h \
  /home/joseph/coding/cpp/dread/GameEngine/spdlog/spdlog.h \
  /home/joseph/coding/cpp/dread/GameEngine/spdlog/common.h \

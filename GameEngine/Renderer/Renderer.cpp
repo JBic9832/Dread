@@ -2,9 +2,10 @@
 
 #include "Core/Logger.h"
 
+namespace Dread {
+
 Renderer::Renderer() {
 	initializeGlad();
-	loadTriangle();
 }
 
 void Renderer::initializeGlad() {
@@ -17,22 +18,5 @@ void Renderer::initializeGlad() {
 	DREAD_CORE_TRACE("SUCCESS LOADING OPENGL BINDINGS");
 }
 
-void Renderer::loadTriangle() {
-	unsigned int vbo;
 
-	glGenVertexArrays(1, &vao);
-	glGenBuffers(1, &vbo);
-
-	glBindVertexArray(vao);
-	glBindBuffer(GL_ARRAY_BUFFER, vbo);
-
-	glBufferData(GL_ARRAY_BUFFER, verts.size() * sizeof(float), verts.data(), GL_STATIC_DRAW);
-
-	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
-}
-
-void Renderer::DrawTriangle() {
-	glBindVertexArray(vao);
-	glDrawArrays(GL_TRIANGLES, 0, 3);
 }

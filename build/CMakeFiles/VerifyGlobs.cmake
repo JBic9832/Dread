@@ -11,8 +11,10 @@ set(OLD_GLOB
   "/home/joseph/coding/cpp/dread/GameEngine/Event/EventListener.cpp"
   "/home/joseph/coding/cpp/dread/GameEngine/Event/EventSystem.cpp"
   "/home/joseph/coding/cpp/dread/GameEngine/InputManager/InputManager.cpp"
+  "/home/joseph/coding/cpp/dread/GameEngine/Renderer/Framebuffer.cpp"
   "/home/joseph/coding/cpp/dread/GameEngine/Renderer/Renderer.cpp"
-  "/home/joseph/coding/cpp/dread/GameEngine/main.cpp"
+  "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.cpp"
+  "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -30,7 +32,11 @@ set(OLD_GLOB
   "/home/joseph/coding/cpp/dread/GameEngine/Event/EventSystem.h"
   "/home/joseph/coding/cpp/dread/GameEngine/Event/EventType.h"
   "/home/joseph/coding/cpp/dread/GameEngine/InputManager/InputManager.h"
+  "/home/joseph/coding/cpp/dread/GameEngine/Renderer/Framebuffer.h"
   "/home/joseph/coding/cpp/dread/GameEngine/Renderer/Renderer.h"
+  "/home/joseph/coding/cpp/dread/GameEngine/Renderer/TriangleTest.h"
+  "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.h"
+  "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.h"
   "/home/joseph/coding/cpp/dread/GameEngine/spdlog/async.h"
   "/home/joseph/coding/cpp/dread/GameEngine/spdlog/async_logger-inl.h"
   "/home/joseph/coding/cpp/dread/GameEngine/spdlog/async_logger.h"

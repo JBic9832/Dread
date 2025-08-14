@@ -3,6 +3,8 @@
 #include "Event/EventSystem.h"
 #include "Window.h"
 #include "Renderer/Renderer.h"
+#include "Renderer/TriangleTest.h"
+#include "InputManager/InputManager.h"
 
 namespace Dread {
 
@@ -12,7 +14,6 @@ public:
 	virtual ~Application();
 
 	void Run();
-	void ReceiveEvent(const Event& e);
 
 protected:
 	virtual void OnRender() = 0;
@@ -23,7 +24,8 @@ private:
 	bool m_Running = true;
 	Window m_Window;
 	Renderer m_Renderer;
-
+	InputManager m_InputManager;
+	TriangleTest m_TriangleTest;
 };
 
 }

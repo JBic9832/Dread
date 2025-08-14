@@ -208,4 +208,117 @@ GameEngine/CMakeFiles/GameEngine.dir/InputManager/InputManager.cpp.o: \
  /usr/include/c++/15.1.1/pstl/execution_defs.h \
  /usr/include/c++/15.1.1/map /usr/include/c++/15.1.1/bits/stl_tree.h \
  /usr/include/c++/15.1.1/bits/stl_map.h \
- /usr/include/c++/15.1.1/bits/stl_multimap.h
+ /usr/include/c++/15.1.1/bits/stl_multimap.h \
+ /home/joseph/coding/cpp/dread/GameEngine/Event/EventType.h \
+ /home/joseph/coding/cpp/dread/GameEngine/Core/Logger.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/spdlog.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/common.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/null_mutex.h \
+ /usr/include/c++/15.1.1/atomic /usr/include/c++/15.1.1/utility \
+ /usr/include/c++/15.1.1/bits/stl_relops.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/tweakme.h \
+ /usr/include/c++/15.1.1/chrono /usr/include/c++/15.1.1/bits/chrono.h \
+ /usr/include/c++/15.1.1/ratio /usr/include/c++/15.1.1/limits \
+ /usr/include/c++/15.1.1/ctime \
+ /usr/include/c++/15.1.1/bits/parse_numbers.h \
+ /usr/include/c++/15.1.1/sstream /usr/include/c++/15.1.1/istream \
+ /usr/include/c++/15.1.1/ostream /usr/include/c++/15.1.1/format \
+ /usr/include/c++/15.1.1/charconv /usr/include/c++/15.1.1/locale \
+ /usr/include/c++/15.1.1/bits/locale_facets_nonio.h \
+ /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/time_members.h \
+ /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/15.1.1/bits/codecvt.h \
+ /usr/include/c++/15.1.1/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/15.1.1/bits/locale_conv.h \
+ /usr/include/c++/15.1.1/optional /usr/include/c++/15.1.1/span \
+ /usr/include/c++/15.1.1/bits/monostate.h \
+ /usr/include/c++/15.1.1/bits/unicode.h \
+ /usr/include/c++/15.1.1/bits/stl_algo.h \
+ /usr/include/c++/15.1.1/bits/algorithmfwd.h \
+ /usr/include/c++/15.1.1/bits/stl_heap.h \
+ /usr/include/c++/15.1.1/bits/uniform_int_dist.h \
+ /usr/include/c++/15.1.1/bits/unicode-data.h \
+ /usr/include/c++/15.1.1/bits/ostream.tcc \
+ /usr/include/c++/15.1.1/bits/istream.tcc \
+ /usr/include/c++/15.1.1/bits/sstream.tcc \
+ /usr/include/c++/15.1.1/bits/chrono_io.h /usr/include/c++/15.1.1/iomanip \
+ /usr/include/c++/15.1.1/bits/quoted_string.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/fmt/fmt.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/fmt/bundled/format.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/fmt/bundled/base.h \
+ /usr/include/string.h /usr/include/strings.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/fmt/bundled/format.h \
+ /usr/include/c++/15.1.1/cmath /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/15.1.1/bits/specfun.h \
+ /usr/include/c++/15.1.1/tr1/gamma.tcc \
+ /usr/include/c++/15.1.1/tr1/special_function_util.h \
+ /usr/include/c++/15.1.1/tr1/bessel_function.tcc \
+ /usr/include/c++/15.1.1/tr1/beta_function.tcc \
+ /usr/include/c++/15.1.1/tr1/ell_integral.tcc \
+ /usr/include/c++/15.1.1/tr1/exp_integral.tcc \
+ /usr/include/c++/15.1.1/tr1/hypergeometric.tcc \
+ /usr/include/c++/15.1.1/tr1/legendre_function.tcc \
+ /usr/include/c++/15.1.1/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/15.1.1/tr1/poly_hermite.tcc \
+ /usr/include/c++/15.1.1/tr1/poly_laguerre.tcc \
+ /usr/include/c++/15.1.1/tr1/riemann_zeta.tcc \
+ /usr/include/c++/15.1.1/cstring \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/fmt/bundled/format-inl.h \
+ /usr/include/c++/15.1.1/algorithm \
+ /usr/include/c++/15.1.1/bits/ranges_algo.h \
+ /usr/include/c++/15.1.1/pstl/glue_algorithm_defs.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/common-inl.h \
+ /usr/include/c++/15.1.1/iterator \
+ /usr/include/c++/15.1.1/bits/stream_iterator.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/registry.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/periodic_worker.h \
+ /usr/include/c++/15.1.1/condition_variable \
+ /usr/include/c++/15.1.1/bits/unique_lock.h \
+ /usr/include/c++/15.1.1/stop_token \
+ /usr/include/c++/15.1.1/bits/std_thread.h \
+ /usr/include/c++/15.1.1/semaphore \
+ /usr/include/c++/15.1.1/bits/semaphore_base.h \
+ /usr/include/c++/15.1.1/bits/atomic_timed_wait.h \
+ /usr/include/c++/15.1.1/bits/this_thread_sleep.h /usr/include/sys/time.h \
+ /usr/include/semaphore.h /usr/include/bits/semaphore.h \
+ /usr/include/c++/15.1.1/mutex /usr/include/c++/15.1.1/thread \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/periodic_worker-inl.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/registry-inl.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/logger.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/backtracer.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/circular_q.h \
+ /usr/include/c++/15.1.1/cassert /usr/include/assert.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/log_msg_buffer.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/log_msg.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/log_msg-inl.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/os.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/os-inl.h \
+ /usr/include/sys/stat.h /usr/include/bits/stat.h \
+ /usr/include/bits/struct_stat.h /usr/include/bits/statx.h \
+ /usr/include/linux/stat.h /usr/include/bits/statx-generic.h \
+ /usr/include/bits/types/struct_statx_timestamp.h \
+ /usr/include/bits/types/struct_statx.h /usr/include/fcntl.h \
+ /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
+ /usr/include/bits/types/struct_iovec.h /usr/include/linux/falloc.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/log_msg_buffer-inl.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/backtracer-inl.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/logger-inl.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/pattern_formatter.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/formatter.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/pattern_formatter-inl.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/fmt_helper.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/mdc.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/sinks/sink.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/sinks/sink-inl.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/sinks/ansicolor_sink.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/console_globals.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/sinks/ansicolor_sink-inl.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/synchronous_factory.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/version.h \
+ /home/joseph/coding/cpp/dread/GameEngine/spdlog/spdlog-inl.h \
+ /usr/include/memory.h
