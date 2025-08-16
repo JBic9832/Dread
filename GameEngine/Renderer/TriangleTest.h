@@ -2,33 +2,29 @@
 
 #include <glad/glad.h>
 #include "VertexArray.h"
+#include "VertexBuffer.h"
 
 namespace Dread {
 
 class TriangleTest {
 public:
 	VertexArray m_Vao;
-	const std::vector<float> verts = {
-		 0.0f,  0.5f, 0.0f,
-		 0.5f, -0.5f, 0.0f,
-		-0.5f, -0.5f, 0.0f
+	const std::vector<Vertex> verts = {
+		{{ 0.0f,  0.5f, 0.0f}, {1.0f, 1.0f, 1.0f}, {0.0f, 0.0f}, {0.0f, 0.0f, 0.0f}},
+		{{ 0.5f, -0.5f, 0.0f}, {1.0f, 1.0f, 1.0f}, {0.0f, 0.0f}, {0.0f, 0.0f, 0.0f}},
+		{{-0.5f, -0.5f, 0.0f}, {1.0f, 1.0f, 1.0f}, {0.0f, 0.0f}, {0.0f, 0.0f, 0.0f}}
 	};
 	TriangleTest() {
 		LoadTriangle();
 	}
 	
 	void LoadTriangle() {
-		unsigned int vbo;
-
-		glGenBuffers(1, &vbo);
+		VertexBuffer vbo;
 
 		m_Vao.Bind();
-		glBindBuffer(GL_ARRAY_BUFFER, vbo);
+		vbo.Bind();
 
-		glBufferData(GL_ARRAY_BUFFER, verts.size() * sizeof(float), verts.data(), GL_STATIC_DRAW);
-
-		glEnableVertexAttribArray(0);
-		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+		vbo.UploadVertexDataWithAttribs(verts);
 
 		VertexArray::UnbindAll();
 	}
