@@ -70,7 +70,7 @@ void Shader::checkShaderCompilationStatus(unsigned int shader, const std::string
 
 	if (!success) {
 		std::cout << "Failed to compile shader: " << shaderName << std::endl;
-		glGetShaderInfoLog(shader, 512, NULL, infoLog);
+		glGetShaderInfoLog(shader, 512, nullptr, infoLog);
 		std::cout << infoLog << std::endl;
 	}
 }
@@ -83,7 +83,7 @@ void Shader::checkShaderProgramLinkStatus(unsigned int shaderProgram)
 	glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
 
 	if (!success) {
-		glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
+		glGetProgramInfoLog(shaderProgram, 512, nullptr, infoLog);
 		std::cout << "Failed to link program: " << infoLog << std::endl;
 	}
 }

@@ -13,6 +13,8 @@ file(GLOB_RECURSE ENGINE_SOURCES CONFIGURE_DEPENDS
 
 add_library(GameEngine STATIC ${ENGINE_SOURCES})
 
+target_compile_definitions("${CMAKE_PROJECT_NAME}" PUBLIC RESOURCES_PATH="${CMAKE_CURRENT_SOURCE_DIR}/resources/")
+
 target_include_directories(GameEngine PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 
 target_link_libraries(GameEngine PRIVATE glfw glad OpenGL::GL imgui glm)

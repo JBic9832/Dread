@@ -4,7 +4,6 @@ namespace Dread {
 
 std::map<std::string, Shader> ResourceManager::s_Shaders;
 
-
 Shader ResourceManager::LoadShader(const std::string &vertexShaderFile, const std::string &fragmentShaderFile, const std::string &shaderName) {
 	Shader shader(vertexShaderFile, fragmentShaderFile);
 	s_Shaders[shaderName] = shader;

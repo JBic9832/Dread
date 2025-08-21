@@ -1,9 +1,13 @@
 #include "Game.h"
 #include "InputManager/InputManager.h"
 #include "Core/Logger.h"
+#include "Renderer/Primitives/Cube.h"
 
 Game::Game(Dread::EventSystem& eventSystem) 
 	: Dread::Application { eventSystem } {
+	Dread::Cube cubeMesh;	
+	Dread::MeshRenderer mr(cubeMesh.m_Mesh);
+	cube.AttachMesh(mr);
 }
 
 Game::~Game() {

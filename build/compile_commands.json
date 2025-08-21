@@ -1,278 +1,278 @@
 [
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Core/Application.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Core/Application.cpp",
-  "file": "/home/joseph/coding/cpp/dread/GameEngine/Core/Application.cpp",
-  "output": "GameEngine/CMakeFiles/GameEngine.dir/Core/Application.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\Core\\Application.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\Core\\Application.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/Core/Application.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Core/Application.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Core/EntryPoint.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Core/EntryPoint.cpp",
-  "file": "/home/joseph/coding/cpp/dread/GameEngine/Core/EntryPoint.cpp",
-  "output": "GameEngine/CMakeFiles/GameEngine.dir/Core/EntryPoint.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\Core\\EntryPoint.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\Core\\EntryPoint.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/Core/EntryPoint.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Core/EntryPoint.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Core/Logger.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Core/Logger.cpp",
-  "file": "/home/joseph/coding/cpp/dread/GameEngine/Core/Logger.cpp",
-  "output": "GameEngine/CMakeFiles/GameEngine.dir/Core/Logger.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\Core\\Logger.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\Core\\Logger.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/Core/Logger.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Core/Logger.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Core/Window.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Core/Window.cpp",
-  "file": "/home/joseph/coding/cpp/dread/GameEngine/Core/Window.cpp",
-  "output": "GameEngine/CMakeFiles/GameEngine.dir/Core/Window.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\Core\\Window.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\Core\\Window.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/Core/Window.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Core/Window.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Event/EventListener.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Event/EventListener.cpp",
-  "file": "/home/joseph/coding/cpp/dread/GameEngine/Event/EventListener.cpp",
-  "output": "GameEngine/CMakeFiles/GameEngine.dir/Event/EventListener.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\Event\\EventListener.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\Event\\EventListener.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/Event/EventListener.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Event/EventListener.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Event/EventSystem.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Event/EventSystem.cpp",
-  "file": "/home/joseph/coding/cpp/dread/GameEngine/Event/EventSystem.cpp",
-  "output": "GameEngine/CMakeFiles/GameEngine.dir/Event/EventSystem.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\Event\\EventSystem.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\Event\\EventSystem.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/Event/EventSystem.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Event/EventSystem.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/InputManager/InputManager.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/InputManager/InputManager.cpp",
-  "file": "/home/joseph/coding/cpp/dread/GameEngine/InputManager/InputManager.cpp",
-  "output": "GameEngine/CMakeFiles/GameEngine.dir/InputManager/InputManager.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\InputManager\\InputManager.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\InputManager\\InputManager.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/InputManager/InputManager.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/InputManager/InputManager.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Renderer/Framebuffer.cpp",
-  "file": "/home/joseph/coding/cpp/dread/GameEngine/Renderer/Framebuffer.cpp",
-  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\Renderer\\Framebuffer.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\Renderer\\Framebuffer.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/Renderer/Framebuffer.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/Framebuffer.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Renderer/Renderer.cpp",
-  "file": "/home/joseph/coding/cpp/dread/GameEngine/Renderer/Renderer.cpp",
-  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\Renderer\\MeshRenderer.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\Renderer\\MeshRenderer.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/Renderer/MeshRenderer.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/MeshRenderer.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.cpp",
-  "file": "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.cpp",
-  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\Renderer\\Renderer.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\Renderer\\Renderer.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/Renderer/Renderer.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/Renderer.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/GameEngine",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glm/include -I/home/joseph/coding/cpp/dread/ThirdParty/glm -std=gnu++23 -o CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o -c /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.cpp",
-  "file": "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.cpp",
-  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\Renderer\\ResourceManager.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\Renderer\\ResourceManager.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/Renderer/ResourceManager.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/ResourceManager.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/Sandbox",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/GameEngine -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -std=gnu++23 -o CMakeFiles/Sandbox.dir/Game.cpp.o -c /home/joseph/coding/cpp/dread/Sandbox/Game.cpp",
-  "file": "/home/joseph/coding/cpp/dread/Sandbox/Game.cpp",
-  "output": "Sandbox/CMakeFiles/Sandbox.dir/Game.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\Renderer\\Shader.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\Renderer\\Shader.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/Renderer/Shader.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/Shader.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/context.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/context.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/context.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/context.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\Renderer\\VertexArray.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\Renderer\\VertexArray.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/Renderer/VertexArray.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/init.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/init.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/init.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/init.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\Renderer\\VertexBuffer.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\Renderer\\VertexBuffer.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/Renderer/VertexBuffer.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/input.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/input.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/input.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/input.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\SceneManagement\\GameObject.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\SceneManagement\\GameObject.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/SceneManagement/GameObject.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/SceneManagement/GameObject.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/monitor.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/monitor.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/monitor.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/GameEngine",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/GameEngine.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\GameEngine.dir\\SceneManagement\\Transform.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\GameEngine\\SceneManagement\\Transform.cpp",
+  "file": "C:/joes-coding/cpp/Dread/GameEngine/SceneManagement/Transform.cpp",
+  "output": "GameEngine/CMakeFiles/GameEngine.dir/SceneManagement/Transform.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/platform.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/platform.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/platform.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/platform.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/Sandbox",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DRESOURCES_PATH=\\\"C:/joes-coding/cpp/Dread/GameEngine/resources/\\\" @CMakeFiles/Sandbox.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\Sandbox.dir\\Game.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\Sandbox\\Game.cpp",
+  "file": "C:/joes-coding/cpp/Dread/Sandbox/Game.cpp",
+  "output": "Sandbox/CMakeFiles/Sandbox.dir/Game.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/vulkan.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/vulkan.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/vulkan.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/vulkan.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\context.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\context.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/context.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/context.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/window.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/window.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/window.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/window.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\init.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\init.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/init.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/init.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/egl_context.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/egl_context.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/egl_context.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\input.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\input.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/input.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/input.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/osmesa_context.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/osmesa_context.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\monitor.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\monitor.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/monitor.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/monitor.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_init.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/null_init.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/null_init.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/null_init.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\platform.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\platform.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/platform.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/platform.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_monitor.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/null_monitor.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/null_monitor.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/null_monitor.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\vulkan.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\vulkan.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/vulkan.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/vulkan.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_window.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/null_window.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/null_window.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/null_window.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\window.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\window.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/window.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/window.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_joystick.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/null_joystick.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/null_joystick.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/null_joystick.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\egl_context.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\egl_context.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/egl_context.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/egl_context.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_module.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/posix_module.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/posix_module.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/posix_module.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\osmesa_context.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\osmesa_context.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/osmesa_context.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/osmesa_context.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_time.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/posix_time.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/posix_time.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/posix_time.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\null_init.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\null_init.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/null_init.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/null_init.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/posix_thread.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/posix_thread.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\null_monitor.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\null_monitor.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/null_monitor.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/null_monitor.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_init.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/x11_init.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/x11_init.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/x11_init.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\null_window.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\null_window.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/null_window.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/null_window.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/x11_monitor.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/x11_monitor.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\null_joystick.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\null_joystick.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/null_joystick.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/null_joystick.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_window.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/x11_window.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/x11_window.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/x11_window.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_module.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\win32_module.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/win32_module.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/win32_module.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/xkb_unicode.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/xkb_unicode.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_time.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\win32_time.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/win32_time.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/win32_time.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/glx_context.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/glx_context.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/glx_context.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/glx_context.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_thread.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\win32_thread.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/win32_thread.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/win32_thread.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/wl_init.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/wl_init.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/wl_init.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/wl_init.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_init.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\win32_init.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/win32_init.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/win32_init.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/wl_monitor.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/wl_monitor.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/wl_monitor.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/wl_monitor.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_joystick.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\win32_joystick.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/win32_joystick.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/win32_joystick.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/wl_window.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/wl_window.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/wl_window.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/wl_window.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_monitor.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\win32_monitor.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/win32_monitor.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/win32_monitor.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/linux_joystick.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/linux_joystick.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_window.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\win32_window.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/win32_window.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/win32_window.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src",
-  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src -I/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_poll.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/posix_poll.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/src/posix_poll.c",
-  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/posix_poll.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -std=c99 -Wall -o CMakeFiles\\glfw.dir\\wgl_context.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glfw-3.4\\src\\wgl_context.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glfw-3.4/src/wgl_context.c",
+  "output": "ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/wgl_context.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/glad",
-  "command": "/usr/bin/cc  -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include  -o CMakeFiles/glad.dir/src/glad.c.o -c /home/joseph/coding/cpp/dread/ThirdParty/glad/src/glad.c",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/glad/src/glad.c",
-  "output": "ThirdParty/glad/CMakeFiles/glad.dir/src/glad.c.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/glad",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe  @CMakeFiles/glad.dir/includes_C.rsp  -o CMakeFiles\\glad.dir\\src\\glad.c.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\glad\\src\\glad.c",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/glad/src/glad.c",
+  "output": "ThirdParty/glad/CMakeFiles/glad.dir/src/glad.c.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/imgui",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -std=gnu++23 -o CMakeFiles/imgui.dir/imgui.cpp.o -c /home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui.cpp",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui.cpp",
-  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/imgui",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\imgui.dir\\imgui.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\imgui\\imgui.cpp",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/imgui/imgui.cpp",
+  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/imgui",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -std=gnu++23 -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c /home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui_demo.cpp",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui_demo.cpp",
-  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/imgui",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\imgui.dir\\imgui_demo.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\imgui\\imgui_demo.cpp",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/imgui/imgui_demo.cpp",
+  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/imgui",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -std=gnu++23 -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui_draw.cpp",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui_draw.cpp",
-  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/imgui",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\imgui.dir\\imgui_draw.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\imgui\\imgui_draw.cpp",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/imgui/imgui_draw.cpp",
+  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/imgui",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -std=gnu++23 -o CMakeFiles/imgui.dir/imgui_tables.cpp.o -c /home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui_tables.cpp",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui_tables.cpp",
-  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/imgui",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\imgui.dir\\imgui_tables.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\imgui\\imgui_tables.cpp",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/imgui/imgui_tables.cpp",
+  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/imgui",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -std=gnu++23 -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui_widgets.cpp",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui_widgets.cpp",
-  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/imgui",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\imgui.dir\\imgui_widgets.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\imgui\\imgui_widgets.cpp",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/imgui/imgui_widgets.cpp",
+  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/imgui",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -std=gnu++23 -o CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o -c /home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui_impl_glfw.cpp",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui_impl_glfw.cpp",
-  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/imgui",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\imgui.dir\\imgui_impl_glfw.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\imgui\\imgui_impl_glfw.cpp",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/imgui/imgui_impl_glfw.cpp",
+  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.obj"
 },
 {
-  "directory": "/home/joseph/coding/cpp/dread/build/ThirdParty/imgui",
-  "command": "/usr/bin/c++  -I/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui -I/home/joseph/coding/cpp/dread/ThirdParty/glfw-3.4/include -I/home/joseph/coding/cpp/dread/ThirdParty/glad/include -std=gnu++23 -o CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o -c /home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui_impl_opengl3.cpp",
-  "file": "/home/joseph/coding/cpp/dread/ThirdParty/imgui/imgui_impl_opengl3.cpp",
-  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o"
+  "directory": "C:/joes-coding/cpp/Dread/build/ThirdParty/imgui",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/imgui.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\imgui.dir\\imgui_impl_opengl3.cpp.obj -c C:\\joes-coding\\cpp\\Dread\\ThirdParty\\imgui\\imgui_impl_opengl3.cpp",
+  "file": "C:/joes-coding/cpp/Dread/ThirdParty/imgui/imgui_impl_opengl3.cpp",
+  "output": "ThirdParty/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.obj"
 }
 ]

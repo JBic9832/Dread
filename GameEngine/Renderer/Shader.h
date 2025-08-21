@@ -9,6 +9,7 @@ namespace Dread {
 
 class Shader {
 public:
+	Shader() {}
 	Shader(const std::string &vertexFilePath, const std::string &fragmentFilePath);
 	void Bind();
 	void UnBind();
