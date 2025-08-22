@@ -1,14 +1,14 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/joes-coding/cpp/Dread/build/cmake_install.cmake",
-		"C:/joes-coding/cpp/Dread/build/GameEngine/cmake_install.cmake",
-		"C:/joes-coding/cpp/Dread/build/Sandbox/cmake_install.cmake",
-		"C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/cmake_install.cmake",
-		"C:/joes-coding/cpp/Dread/build/ThirdParty/glfw-3.4/src/cmake_install.cmake",
-		"C:/joes-coding/cpp/Dread/build/ThirdParty/glad/cmake_install.cmake",
-		"C:/joes-coding/cpp/Dread/build/ThirdParty/glm/cmake_install.cmake",
-		"C:/joes-coding/cpp/Dread/build/ThirdParty/imgui/cmake_install.cmake"
+		"/home/joseph/coding/cpp/dread/build/cmake_install.cmake",
+		"/home/joseph/coding/cpp/dread/build/GameEngine/cmake_install.cmake",
+		"/home/joseph/coding/cpp/dread/build/Sandbox/cmake_install.cmake",
+		"/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/cmake_install.cmake",
+		"/home/joseph/coding/cpp/dread/build/ThirdParty/glfw-3.4/src/cmake_install.cmake",
+		"/home/joseph/coding/cpp/dread/build/ThirdParty/glad/cmake_install.cmake",
+		"/home/joseph/coding/cpp/dread/build/ThirdParty/glm/cmake_install.cmake",
+		"/home/joseph/coding/cpp/dread/build/ThirdParty/imgui/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

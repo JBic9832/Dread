@@ -25,6 +25,8 @@ void Game::OnUpdate() {
 }
 
 void Game::OnRender() {
+	cube.DrawMesh();
+
 }
 
 Dread::Application* CreateApplication(Dread::EventSystem& eventSystem) {

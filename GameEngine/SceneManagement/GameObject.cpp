@@ -4,11 +4,14 @@ namespace Dread {
 
 GameObject::GameObject() {}
 
-void GameObject::AttachMesh(const std::shared_ptr<Mesh> mesh) {
+void GameObject::AttachMesh(MeshRenderer meshRenderer) {
+	m_AttachedMesh = meshRenderer;
+}
 
-	std::shared_ptr<MeshRenderer> pMeshRenderer = std::make_shared<MeshRenderer>(mesh);
-
-	m_AttachedMesh.emplace(pMeshRenderer);
+void GameObject::DrawMesh() {
+	if (m_AttachedMesh) {
+		m_AttachedMesh.value().DrawMesh();
+	}
 }
 
 

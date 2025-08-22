@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/joes-coding/cpp/Dread/Sandbox/Game.cpp" "Sandbox/CMakeFiles/Sandbox.dir/Game.cpp.obj" "gcc" "Sandbox/CMakeFiles/Sandbox.dir/Game.cpp.obj.d"
+  "/home/joseph/coding/cpp/dread/Sandbox/Game.cpp" "Sandbox/CMakeFiles/Sandbox.dir/Game.cpp.o" "gcc" "Sandbox/CMakeFiles/Sandbox.dir/Game.cpp.o.d"
+  "" "bin/Sandbox" "gcc" "Sandbox/CMakeFiles/Sandbox.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -6,6 +6,7 @@ namespace Dread {
 class Cube {
 public:
 	Cube() {
+		m_Mesh = std::make_shared<Mesh>();
 		std::vector<Vertex> vertices = {
 			// --- Front face ---
 			{{-0.5f, -0.5f,  0.5f}, {1.0f, 0.0f, 0.0f}, {0.0f, 0.0f}, {0.0f, 0.0f, 1.0f}},

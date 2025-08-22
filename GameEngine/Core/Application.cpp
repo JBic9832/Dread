@@ -15,7 +15,6 @@ void Application::Run() {
 	while (!m_Window.ShouldClose()) {
 		OnUpdate();
 		OnRender();
-		m_TriangleTest.DrawTriangle();
 		m_Window.UpdateWindow();
 	}
 }

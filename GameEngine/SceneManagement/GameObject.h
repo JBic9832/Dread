@@ -10,11 +10,12 @@ class GameObject {
 public:
 	GameObject();
 
-	void AttachMesh(const std::shared_ptr<Mesh> mesh);
+	void AttachMesh(MeshRenderer meshRenderer);
+	void DrawMesh();
 
 private:
 	Transform m_Transform;
-	std::optional<std::shared_ptr<MeshRenderer>> m_AttachedMesh; // optional
+	std::optional<MeshRenderer> m_AttachedMesh; // optional
 };
 
 }
