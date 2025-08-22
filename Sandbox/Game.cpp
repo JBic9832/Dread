@@ -2,6 +2,7 @@
 #include "InputManager/InputManager.h"
 #include "Core/Logger.h"
 #include "Renderer/Primitives/Cube.h"
+#include "Core/Time.h"
 
 Game::Game(Dread::EventSystem& eventSystem) 
 	: Dread::Application { eventSystem }
@@ -27,7 +28,7 @@ void Game::OnUpdate() {
 		DREAD_INFO("Key W was pressed!");
 	}
 
-	mainCamera.update(this->GetWindowHandle(), 0.05);
+	mainCamera.update(this->GetWindowHandle(), Dread::Time::deltaTime);
 }
 
 void Game::OnRender() {
