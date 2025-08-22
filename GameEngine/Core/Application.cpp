@@ -12,11 +12,18 @@ Application::~Application() {
 }
 
 void Application::Run() {
+	glEnable(GL_DEPTH_TEST);
 	while (!m_Window.ShouldClose()) {
+		glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		OnUpdate();
 		OnRender();
 		m_Window.UpdateWindow();
 	}
+}
+
+GLFWwindow* Application::GetWindowHandle() const {
+	return m_Window.WindowHandle();
 }
 
 }

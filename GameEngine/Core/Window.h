@@ -15,6 +15,7 @@ public:
 
 	bool ShouldClose() const;
 	void UpdateWindow() const;
+	GLFWwindow* WindowHandle() const;
 
 private:
 	GLFWwindow* m_WindowHandle;

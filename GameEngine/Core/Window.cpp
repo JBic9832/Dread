@@ -41,7 +41,6 @@ bool Window::ShouldClose() const {
 }
 
 void Window::UpdateWindow() const {
-
 	glfwSwapBuffers(m_WindowHandle);
 	glfwPollEvents();
 }
@@ -52,6 +51,10 @@ void Window::SendKeyEvent(int key, int action) {
 	} else if (action == GLFW_RELEASE) {
 		m_EventSystem.Notify(KeyReleasedEvent(key));
 	}
+}
+
+GLFWwindow* Window::WindowHandle() const {
+	return m_WindowHandle;
 }
 
 }

@@ -4,6 +4,8 @@
 #include "Event/EventSystem.h"
 #include "Renderer/MeshRenderer.h"
 #include "SceneManagement/GameObject.h"
+#include "SceneManagement/Camera.h"
+#include "Renderer/ResourceManager.h"
 
 class Game : public Dread::Application {
 public:
@@ -16,6 +18,8 @@ protected:
 
 private:
 	Dread::GameObject cube;
+	Dread::Camera mainCamera;
+	Dread::Shader shader;
 
 };
 Dread::Application* CreateApplication();

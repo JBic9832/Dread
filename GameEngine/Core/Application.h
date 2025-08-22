@@ -14,6 +14,7 @@ public:
 	virtual ~Application();
 
 	void Run();
+	GLFWwindow* GetWindowHandle() const;
 
 protected:
 	virtual void OnRender() = 0;

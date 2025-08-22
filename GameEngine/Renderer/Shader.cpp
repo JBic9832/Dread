@@ -3,6 +3,8 @@
 #include <iostream>
 #include <sstream>
 
+#include "Core/Logger.h"
+
 namespace Dread {
 
 Shader::Shader(const std::string& vertexFilePath, const std::string& fragmentFilePath)
@@ -120,6 +122,9 @@ void Shader::createShader(const std::string vertexPath, const std::string fragme
 	{
 		std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
 	}
+
+	DREAD_CORE_INFO("VERTEX CODE: \n{0}\n", vertexCode);
+	DREAD_CORE_INFO("FRAGMENT CODE: \n{0}\n", fragmentCode);
 
 	const char* vShaderCode = vertexCode.c_str();
 	const char* fShaderCode = fragmentCode.c_str();
