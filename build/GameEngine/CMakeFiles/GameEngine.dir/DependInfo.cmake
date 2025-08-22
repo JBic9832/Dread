@@ -22,6 +22,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/joseph/coding/cpp/dread/GameEngine/Renderer/Shader.cpp" "GameEngine/CMakeFiles/GameEngine.dir/Renderer/Shader.cpp.o" "gcc" "GameEngine/CMakeFiles/GameEngine.dir/Renderer/Shader.cpp.o.d"
   "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.cpp" "GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o" "gcc" "GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o.d"
   "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.cpp" "GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o" "gcc" "GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o.d"
+  "/home/joseph/coding/cpp/dread/GameEngine/SceneManagement/Camera.cpp" "GameEngine/CMakeFiles/GameEngine.dir/SceneManagement/Camera.cpp.o" "gcc" "GameEngine/CMakeFiles/GameEngine.dir/SceneManagement/Camera.cpp.o.d"
   "/home/joseph/coding/cpp/dread/GameEngine/SceneManagement/GameObject.cpp" "GameEngine/CMakeFiles/GameEngine.dir/SceneManagement/GameObject.cpp.o" "gcc" "GameEngine/CMakeFiles/GameEngine.dir/SceneManagement/GameObject.cpp.o.d"
   "/home/joseph/coding/cpp/dread/GameEngine/SceneManagement/Transform.cpp" "GameEngine/CMakeFiles/GameEngine.dir/SceneManagement/Transform.cpp.o" "gcc" "GameEngine/CMakeFiles/GameEngine.dir/SceneManagement/Transform.cpp.o.d"
   )

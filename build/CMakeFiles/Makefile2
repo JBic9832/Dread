@@ -241,12 +241,12 @@ GameEngine/CMakeFiles/GameEngine.dir/all: ThirdParty/glad/CMakeFiles/glad.dir/al
 GameEngine/CMakeFiles/GameEngine.dir/all: ThirdParty/imgui/CMakeFiles/imgui.dir/all
 	$(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target GameEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target GameEngine"
 .PHONY : GameEngine/CMakeFiles/GameEngine.dir/all
 
 # Build rule for subdir invocation for target.
 GameEngine/CMakeFiles/GameEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joseph/coding/cpp/dread/build/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joseph/coding/cpp/dread/build/CMakeFiles 73
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GameEngine/CMakeFiles/GameEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/joseph/coding/cpp/dread/build/CMakeFiles 0
 .PHONY : GameEngine/CMakeFiles/GameEngine.dir/rule
@@ -258,7 +258,7 @@ GameEngine: GameEngine/CMakeFiles/GameEngine.dir/rule
 # codegen rule for target.
 GameEngine/CMakeFiles/GameEngine.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Finished codegen for target GameEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Finished codegen for target GameEngine"
 .PHONY : GameEngine/CMakeFiles/GameEngine.dir/codegen
 
 # clean rule for target.
@@ -276,12 +276,12 @@ Sandbox/CMakeFiles/Sandbox.dir/all: ThirdParty/glad/CMakeFiles/glad.dir/all
 Sandbox/CMakeFiles/Sandbox.dir/all: ThirdParty/imgui/CMakeFiles/imgui.dir/all
 	$(MAKE) $(MAKESILENT) -f Sandbox/CMakeFiles/Sandbox.dir/build.make Sandbox/CMakeFiles/Sandbox.dir/depend
 	$(MAKE) $(MAKESILENT) -f Sandbox/CMakeFiles/Sandbox.dir/build.make Sandbox/CMakeFiles/Sandbox.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=18,19 "Built target Sandbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=19,20 "Built target Sandbox"
 .PHONY : Sandbox/CMakeFiles/Sandbox.dir/all
 
 # Build rule for subdir invocation for target.
 Sandbox/CMakeFiles/Sandbox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joseph/coding/cpp/dread/build/CMakeFiles 74
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joseph/coding/cpp/dread/build/CMakeFiles 75
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Sandbox/CMakeFiles/Sandbox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/joseph/coding/cpp/dread/build/CMakeFiles 0
 .PHONY : Sandbox/CMakeFiles/Sandbox.dir/rule
@@ -293,7 +293,7 @@ Sandbox: Sandbox/CMakeFiles/Sandbox.dir/rule
 # codegen rule for target.
 Sandbox/CMakeFiles/Sandbox.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Sandbox/CMakeFiles/Sandbox.dir/build.make Sandbox/CMakeFiles/Sandbox.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=18,19 "Finished codegen for target Sandbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=19,20 "Finished codegen for target Sandbox"
 .PHONY : Sandbox/CMakeFiles/Sandbox.dir/codegen
 
 # clean rule for target.
@@ -308,7 +308,7 @@ Sandbox/CMakeFiles/Sandbox.dir/clean:
 ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/build.make ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/build.make ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67 "Built target glfw"
 .PHONY : ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -325,7 +325,7 @@ glfw: ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/rule
 # codegen rule for target.
 ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/build.make ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66 "Finished codegen for target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67 "Finished codegen for target glfw"
 .PHONY : ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/codegen
 
 # clean rule for target.
@@ -340,7 +340,7 @@ ThirdParty/glfw-3.4/src/CMakeFiles/glfw.dir/clean:
 ThirdParty/glfw-3.4/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f ThirdParty/glfw-3.4/src/CMakeFiles/update_mappings.dir/build.make ThirdParty/glfw-3.4/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f ThirdParty/glfw-3.4/src/CMakeFiles/update_mappings.dir/build.make ThirdParty/glfw-3.4/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=75 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=76 "Built target update_mappings"
 .PHONY : ThirdParty/glfw-3.4/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -357,7 +357,7 @@ update_mappings: ThirdParty/glfw-3.4/src/CMakeFiles/update_mappings.dir/rule
 # codegen rule for target.
 ThirdParty/glfw-3.4/src/CMakeFiles/update_mappings.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f ThirdParty/glfw-3.4/src/CMakeFiles/update_mappings.dir/build.make ThirdParty/glfw-3.4/src/CMakeFiles/update_mappings.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=75 "Finished codegen for target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=76 "Finished codegen for target update_mappings"
 .PHONY : ThirdParty/glfw-3.4/src/CMakeFiles/update_mappings.dir/codegen
 
 # clean rule for target.
@@ -372,7 +372,7 @@ ThirdParty/glfw-3.4/src/CMakeFiles/update_mappings.dir/clean:
 ThirdParty/glad/CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f ThirdParty/glad/CMakeFiles/glad.dir/build.make ThirdParty/glad/CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f ThirdParty/glad/CMakeFiles/glad.dir/build.make ThirdParty/glad/CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=20,21 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=21,22 "Built target glad"
 .PHONY : ThirdParty/glad/CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
@@ -389,7 +389,7 @@ glad: ThirdParty/glad/CMakeFiles/glad.dir/rule
 # codegen rule for target.
 ThirdParty/glad/CMakeFiles/glad.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f ThirdParty/glad/CMakeFiles/glad.dir/build.make ThirdParty/glad/CMakeFiles/glad.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=20,21 "Finished codegen for target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=21,22 "Finished codegen for target glad"
 .PHONY : ThirdParty/glad/CMakeFiles/glad.dir/codegen
 
 # clean rule for target.
@@ -405,7 +405,7 @@ ThirdParty/imgui/CMakeFiles/imgui.dir/all: ThirdParty/glfw-3.4/src/CMakeFiles/gl
 ThirdParty/imgui/CMakeFiles/imgui.dir/all: ThirdParty/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f ThirdParty/imgui/CMakeFiles/imgui.dir/build.make ThirdParty/imgui/CMakeFiles/imgui.dir/depend
 	$(MAKE) $(MAKESILENT) -f ThirdParty/imgui/CMakeFiles/imgui.dir/build.make ThirdParty/imgui/CMakeFiles/imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=67,68,69,70,71,72,73,74 "Built target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=68,69,70,71,72,73,74,75 "Built target imgui"
 .PHONY : ThirdParty/imgui/CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
@@ -422,7 +422,7 @@ imgui: ThirdParty/imgui/CMakeFiles/imgui.dir/rule
 # codegen rule for target.
 ThirdParty/imgui/CMakeFiles/imgui.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f ThirdParty/imgui/CMakeFiles/imgui.dir/build.make ThirdParty/imgui/CMakeFiles/imgui.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=67,68,69,70,71,72,73,74 "Finished codegen for target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseph/coding/cpp/dread/build/CMakeFiles --progress-num=68,69,70,71,72,73,74,75 "Finished codegen for target imgui"
 .PHONY : ThirdParty/imgui/CMakeFiles/imgui.dir/codegen
 
 # clean rule for target.

@@ -13,9 +13,12 @@ Sandbox/CMakeFiles/Sandbox.dir/Game.cpp.o: /home/joseph/coding/cpp/dread/Sandbox
   /home/joseph/coding/cpp/dread/GameEngine/Renderer/MeshRenderer.h \
   /home/joseph/coding/cpp/dread/GameEngine/Renderer/Primitives/Cube.h \
   /home/joseph/coding/cpp/dread/GameEngine/Renderer/Renderer.h \
+  /home/joseph/coding/cpp/dread/GameEngine/Renderer/ResourceManager.h \
+  /home/joseph/coding/cpp/dread/GameEngine/Renderer/Shader.h \
   /home/joseph/coding/cpp/dread/GameEngine/Renderer/TriangleTest.h \
   /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.h \
   /home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.h \
+  /home/joseph/coding/cpp/dread/GameEngine/SceneManagement/Camera.h \
   /home/joseph/coding/cpp/dread/GameEngine/SceneManagement/GameObject.h \
   /home/joseph/coding/cpp/dread/GameEngine/SceneManagement/Transform.h \
   /home/joseph/coding/cpp/dread/GameEngine/spdlog/common-inl.h \
@@ -192,6 +195,57 @@ Sandbox/CMakeFiles/Sandbox.dir/Game.cpp.o: /home/joseph/coding/cpp/dread/Sandbox
   /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_half.inl \
   /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/fwd.hpp \
   /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/glm.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/setup.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/scalar_constants.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/scalar_constants.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/constants.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/constants.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_clip_space.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_clip_space.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_projection.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_projection.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_transform.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_transform.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/setup.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_relational.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_relational.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/setup.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_float.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_quat.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_quat.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_geometric.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_geometric.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_common.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_common.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_double.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_double_precision.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_float.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_float_precision.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_transform.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_transform.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_trigonometric.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_trigonometric.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_bool1.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_bool1_precision.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_double1.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_double1_precision.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_float1.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_float1_precision.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_int1.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_int1_sized.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_relational.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_relational.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_uint1.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_uint1_sized.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/epsilon.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/epsilon.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/quaternion.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/quaternion.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/vec1.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/matrix_transform.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/matrix_transform.inl \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/type_ptr.hpp \
+  /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/type_ptr.inl \
   /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/integer.hpp \
   /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/mat2x2.hpp \
   /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/packing.hpp \
@@ -630,8 +684,6 @@ Sandbox/CMakeFiles/Sandbox.dir/Game.cpp.o:
 
 ThirdParty/glfw-3.4/src/libglfw3.a:
 
-ThirdParty/glad/libglad.a:
-
 GameEngine/libGameEngine.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h:
@@ -668,69 +720,83 @@ GameEngine/libGameEngine.a:
 
 /usr/include/stdint.h:
 
-/usr/include/bits/types/clockid_t.h:
+/usr/include/semaphore.h:
 
-/usr/include/bits/semaphore.h:
+/usr/include/sched.h:
 
-/usr/include/bits/select.h:
+/usr/include/pthread.h:
 
-/usr/include/bits/types/__FILE.h:
+/usr/include/memory.h:
 
-/usr/include/c++/15.1.1/ext/numeric_traits.h:
+/usr/include/math.h:
+
+/usr/include/locale.h:
+
+/usr/include/linux/types.h:
+
+ThirdParty/imgui/libimgui.a:
+
+/usr/include/linux/stat.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/lib/crtn.o:
+
+/usr/include/linux/limits.h:
+
+/usr/include/linux/falloc.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/limits.h:
+
+/usr/include/libintl.h:
+
+/usr/include/gnu/stubs-64.h:
 
 /usr/include/features.h:
 
-/usr/include/bits/pthreadtypes-arch.h:
+/usr/include/features-time64.h:
 
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_uint3.hpp:
+/usr/include/fcntl.h:
 
-/usr/include/c++/15.1.1/bits/stl_pair.h:
+/usr/include/errno.h:
 
-/usr/include/c++/15.1.1/cstddef:
+/usr/include/endian.h:
 
-/usr/include/bits/posix1_lim.h:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/messages_members.h:
 
-/usr/include/bits/mathcalls-helper-functions.h:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
 
-/usr/include/bits/local_lim.h:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
 
-/usr/include/c++/15.1.1/bits/functexcept.h:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
 
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat4x2.inl:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
 
-/usr/include/bits/libc-header-start.h:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
-/usr/include/c++/15.1.1/bits/atomic_base.h:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
-/usr/include/bits/syscall.h:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
-/usr/include/bits/iscanonical.h:
+/usr/include/c++/15.1.1/utility:
 
-/usr/include/c++/15.1.1/bits/ranges_util.h:
+/usr/include/c++/15.1.1/unordered_map:
 
-/usr/include/bits/endian.h:
+/usr/include/c++/15.1.1/tr1/special_function_util.h:
 
-/usr/include/bits/confname.h:
+/usr/include/c++/15.1.1/tr1/riemann_zeta.tcc:
 
-/usr/include/c++/15.1.1/ext/string_conversions.h:
+/usr/include/c++/15.1.1/tr1/poly_hermite.tcc:
 
-/usr/include/bits/posix_opt.h:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double4x2_precision.hpp:
-
-/usr/include/c++/15.1.1/bits/alloc_traits.h:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/include/c++/15.1.1/tr1/beta_function.tcc:
+/usr/include/c++/15.1.1/tr1/legendre_function.tcc:
 
 /usr/include/asm/unistd.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_bool3.hpp:
-
-/usr/include/c++/15.1.1/utility:
 
 /usr/include/asm/types.h:
 
@@ -754,10 +820,6 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/cerrno:
 
-/usr/include/bits/mathcalls-macros.h:
-
-/usr/include/c++/15.1.1/format:
-
 /usr/include/asm-generic/int-ll64.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/integer.hpp:
@@ -768,23 +830,77 @@ GameEngine/libGameEngine.a:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/trigonometric.hpp:
 
+ThirdParty/glad/libglad.a:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_clip_space.inl:
+
 /usr/include/c++/15.1.1/bits/move.h:
 
 /usr/include/c++/15.1.1/bits/ranges_base.h:
 
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/geometric.hpp:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/type_ptr.hpp:
+
+/usr/include/bits/unistd_ext.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/c++/15.1.1/tr1/beta_function.tcc:
+
+/usr/include/c++/15.1.1/bits/formatfwd.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/epsilon.inl:
+
+/usr/include/c++/15.1.1/type_traits:
+
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/spdlog-inl.h:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_bool1.hpp:
+
+/usr/include/c++/15.1.1/bits/basic_ios.tcc:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_relational.inl:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_transform.inl:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/func_exponential.inl:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_transform.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_float_precision.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_common.hpp:
+
+/usr/include/c++/15.1.1/cstdio:
+
+/usr/include/bits/endian.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_quat.inl:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_transform.hpp:
+
+/usr/include/c++/15.1.1/tr1/hypergeometric.tcc:
+
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/sinks/ansicolor_sink-inl.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_projection.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/constants.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/scalar_constants.inl:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_half.inl:
 
 /usr/include/c++/15.1.1/bits/stl_iterator_base_types.h:
 
-/usr/include/bits/stat.h:
-
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/func_trigonometric.inl:
 
-/usr/include/bits/fcntl.h:
-
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/func_integer.inl:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_geometric.inl:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/func_common.inl:
 
 /usr/include/stdlib.h:
 
@@ -792,11 +908,11 @@ GameEngine/libGameEngine.a:
 
 /usr/include/bits/fcntl-linux.h:
 
-/usr/include/bits/sched.h:
-
-/usr/include/bits/struct_rwlock.h:
-
 /usr/include/bits/timesize.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/geometric.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/vec1.hpp:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_int4.hpp:
 
@@ -810,13 +926,15 @@ GameEngine/libGameEngine.a:
 
 /usr/include/bits/types/time_t.h:
 
-/usr/include/bits/cpu-set.h:
-
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_int3.hpp:
 
 /usr/include/asm/bitsperlong.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double4x3.hpp:
+
+/usr/include/linux/sched/types.h:
+
+/usr/include/c++/15.1.1/cstdint:
 
 /usr/include/c++/15.1.1/bits/ostream.tcc:
 
@@ -827,10 +945,6 @@ GameEngine/libGameEngine.a:
 /usr/include/c++/15.1.1/ios:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_vec4.hpp:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_float2_precision.hpp:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float4x2_precision.hpp:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat2x2.hpp:
 
@@ -850,6 +964,10 @@ GameEngine/libGameEngine.a:
 
 /usr/include/asm-generic/errno-base.h:
 
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float4x2_precision.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_relational.inl:
+
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_double3.hpp:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_double4_precision.hpp:
@@ -860,39 +978,21 @@ GameEngine/libGameEngine.a:
 
 /usr/include/bits/types/struct_iovec.h:
 
-/usr/include/bits/struct_mutex.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double2x4_precision.hpp:
-
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_bool4.hpp:
-
-/usr/include/memory.h:
-
-/usr/include/bits/stdint-least.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_bool3_precision.hpp:
 
 /usr/include/bits/uintn-identity.h:
 
-/usr/include/bits/statx-generic.h:
-
-/usr/include/bits/locale.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_bool2_precision.hpp:
-
 /usr/include/c++/15.1.1/bits/uses_allocator_args.h:
+
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/fmt/fmt.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float2x2_precision.hpp:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double2x2_precision.hpp:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/scalar_uint_sized.hpp:
-
-/usr/include/bits/stdint-intn.h:
-
-/usr/include/c++/15.1.1/typeinfo:
-
-/usr/include/bits/wctype-wchar.h:
 
 /usr/include/c++/15.1.1/mutex:
 
@@ -910,47 +1010,51 @@ GameEngine/libGameEngine.a:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/func_vector_relational.inl:
 
-/usr/include/c++/15.1.1/bits/atomic_timed_wait.h:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_uint3.hpp:
 
-/usr/include/bits/pthread_stack_min-dynamic.h:
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/15.1.1/bits/stl_pair.h:
+
+/usr/include/c++/15.1.1/cstddef:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/mat4x2.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_bool2.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/mat3x4.hpp:
+
+/home/joseph/coding/cpp/dread/GameEngine/Renderer/Shader.h:
 
 /home/joseph/coding/cpp/dread/GameEngine/spdlog/sinks/sink-inl.h:
 
-/usr/include/bits/getopt_core.h:
-
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/registry.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/libintl.h:
-
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat3x2.hpp:
 
-/usr/include/bits/types/struct___jmp_buf_tag.h:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_double1_precision.hpp:
 
-/usr/include/bits/wchar.h:
-
-/usr/include/bits/thread-shared-types.h:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_clip_space.hpp:
 
 /home/joseph/coding/cpp/dread/GameEngine/spdlog/spdlog.h:
-
-/usr/include/c++/15.1.1/tr1/special_function_util.h:
 
 /usr/lib/ld-linux-x86-64.so.2:
 
 /home/joseph/coding/cpp/dread/GameEngine/spdlog/logger.h:
 
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
-
 /usr/include/assert.h:
 
 /home/joseph/coding/cpp/dread/GameEngine/spdlog/logger-inl.h:
 
-/usr/include/bits/floatn-common.h:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/mat3x3.hpp:
 
-/usr/include/c++/15.1.1/semaphore:
+/usr/include/bits/math-vector.h:
 
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/fmt/fmt.h:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float4x3.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_float1.hpp:
+
+/usr/include/c++/15.1.1/debug/debug.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_double.hpp:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_vec3.hpp:
 
@@ -960,21 +1064,15 @@ GameEngine/libGameEngine.a:
 
 /home/joseph/coding/cpp/dread/GameEngine/spdlog/pattern_formatter-inl.h:
 
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/fmt/bundled/format-inl.h:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/scalar_constants.hpp:
 
-/usr/include/bits/types/struct_sched_param.h:
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/fmt/bundled/format-inl.h:
 
 /usr/include/c++/15.1.1/bits/max_size_type.h:
 
 /home/joseph/coding/cpp/dread/GameEngine/spdlog/fmt/bundled/base.h:
 
-/usr/include/bits/environments.h:
-
-/usr/include/c++/15.1.1/bits/uses_allocator.h:
-
 /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/synchronous_factory.h:
-
-/usr/include/errno.h:
 
 /usr/include/sys/time.h:
 
@@ -986,41 +1084,47 @@ GameEngine/libGameEngine.a:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double4x4_precision.hpp:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/bits/types/struct_sched_param.h:
 
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double2x2.hpp:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_int1.hpp:
 
-/usr/include/c++/15.1.1/bits/basic_ios.tcc:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat2x3.inl:
+
+/usr/include/c++/15.1.1/bits/uniform_int_dist.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o:
+
+/usr/include/c++/15.1.1/functional:
+
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/log_msg_buffer-inl.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/qualifier.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_uint1_sized.hpp:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/c++/15.1.1/bits/monostate.h:
+
+/usr/include/c++/15.1.1/bits/semaphore_base.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/constants.inl:
 
 /home/joseph/coding/cpp/dread/GameEngine/SceneManagement/Transform.h:
 
 /usr/include/c++/15.1.1/bits/stl_algobase.h:
 
-/usr/include/bits/floatn.h:
-
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double4x4.hpp:
 
-/usr/include/c++/15.1.1/bits/std_thread.h:
+/home/joseph/coding/cpp/dread/GameEngine/Renderer/ResourceManager.h:
 
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float3x2.hpp:
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/log_msg_buffer.h:
 
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/log_msg.h:
-
-/usr/include/c++/15.1.1/bits/new_allocator.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_bool2.hpp:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/mat4x2.hpp:
+/home/joseph/coding/cpp/dread/GameEngine/Event/Event.h:
 
 /home/joseph/coding/cpp/dread/Sandbox/Game.cpp:
 
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/c++/15.1.1/bits/istream.tcc:
-
-/usr/include/c++/15.1.1/backward/auto_ptr.h:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/matrix_transform.inl:
 
 /home/joseph/coding/cpp/dread/GameEngine/spdlog/details/os.h:
 
@@ -1036,8 +1140,6 @@ GameEngine/libGameEngine.a:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_bool4_precision.hpp:
 
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
-
 /home/joseph/coding/cpp/dread/Sandbox/Game.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double3x3_precision.hpp:
@@ -1052,9 +1154,25 @@ GameEngine/libGameEngine.a:
 
 /home/joseph/coding/cpp/dread/GameEngine/Core/Window.h:
 
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/spdlog-inl.h:
+/home/joseph/coding/cpp/dread/GameEngine/Renderer/Renderer.h:
 
-/usr/include/c++/15.1.1/type_traits:
+/usr/lib/libXau.so.6:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat4x2.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double3x4_precision.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_float2_precision.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_trigonometric.inl:
+
+/usr/include/c++/15.1.1/bits/out_ptr.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/setup.hpp:
+
+/usr/include/c++/15.1.1/tr1/modified_bessel_func.tcc:
+
+/home/joseph/coding/cpp/dread/GameEngine/Renderer/TriangleTest.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat2x2.inl:
 
@@ -1068,43 +1186,17 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/span:
 
-/usr/include/c++/15.1.1/tr1/poly_hermite.tcc:
+/usr/include/c++/15.1.1/initializer_list:
 
-/usr/include/bits/mathcalls.h:
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/common.h:
 
-/usr/include/c++/15.1.1/bits/refwrap.h:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double2x4_precision.hpp:
 
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_int2_sized.hpp:
+/usr/include/bits/struct_mutex.h:
 
-/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.h:
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/fmt/bundled/format.h:
 
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_vec2.hpp:
-
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/version.h:
-
-/usr/include/c++/15.1.1/backward/binders.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glad/include/glad/glad.h:
-
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/null_mutex.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/mat2x4.hpp:
-
-/usr/include/bits/statx.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/common.hpp:
-
-/home/joseph/coding/cpp/dread/GameEngine/Renderer/Renderer.h:
-
-/usr/lib/libXau.so.6:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat4x2.hpp:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double3x4_precision.hpp:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/setup.hpp:
-
-/usr/include/sched.h:
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/log_msg-inl.h:
 
 /usr/lib/libgcc_s.so.1:
 
@@ -1116,49 +1208,7 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/iosfwd:
 
-/usr/include/bits/posix2_lim.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/qualifier.hpp:
-
-/usr/include/c++/15.1.1/bits/monostate.h:
-
-/usr/include/c++/15.1.1/bits/semaphore_base.h:
-
-/usr/include/bits/libm-simd-decl-stubs.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_vec2.inl:
-
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/backtracer.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float2x4_precision.hpp:
-
-/home/joseph/coding/cpp/dread/GameEngine/Event/EventSystem.h:
-
-/usr/include/bits/byteswap.h:
-
-/usr/include/c++/15.1.1/bits/allocated_ptr.h:
-
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/sinks/sink.h:
-
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/common-inl.h:
-
-/usr/include/c++/15.1.1/bits/locale_facets.h:
-
-/usr/include/c++/15.1.1/cmath:
-
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/circular_q.h:
-
-/usr/include/bits/types/__locale_t.h:
-
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/formatter.h:
-
-/usr/include/c++/15.1.1/ext/concurrence.h:
-
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/fmt_helper.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_vec1.hpp:
-
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/periodic_worker-inl.h:
+/home/joseph/coding/cpp/dread/GameEngine/SceneManagement/Camera.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/vec3.hpp:
 
@@ -1168,27 +1218,103 @@ GameEngine/libGameEngine.a:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_uint2_sized.hpp:
 
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/log_msg-inl.h:
+/home/joseph/coding/cpp/dread/GameEngine/Event/EventSystem.h:
 
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/fmt/bundled/format.h:
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/backtracer.h:
 
-/usr/include/c++/15.1.1/bits/uniform_int_dist.h:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float2x4_precision.hpp:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_quat.hpp:
 
-/usr/include/c++/15.1.1/functional:
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/sinks/sink.h:
 
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/log_msg_buffer-inl.h:
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/common-inl.h:
 
-/home/joseph/coding/cpp/dread/GameEngine/Event/Event.h:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_relational.hpp:
 
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/log_msg_buffer.h:
+/usr/include/c++/15.1.1/bits/locale_facets.h:
+
+/usr/include/gnu/stubs.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_float.hpp:
 
 /usr/include/bits/mathcalls-narrow.h:
 
 /usr/include/c++/15.1.1/tr1/gamma.tcc:
 
+/usr/include/bits/types/FILE.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double4x3_precision.hpp:
+
+/usr/include/c++/15.1.1/cmath:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_float1_precision.hpp:
+
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/circular_q.h:
+
+/usr/include/bits/types/__locale_t.h:
+
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/formatter.h:
+
+/usr/include/c++/15.1.1/ext/concurrence.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/quaternion.inl:
+
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/fmt_helper.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_int1_sized.hpp:
+
+/usr/include/c++/15.1.1/bits/locale_facets_nonio.h:
+
+/usr/include/c++/15.1.1/bits/stl_iterator.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_vec1.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_vec2.hpp:
+
+/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.h:
+
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/version.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_int2_sized.hpp:
+
+/usr/include/c++/15.1.1/backward/binders.h:
+
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/periodic_worker-inl.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glad/include/glad/glad.h:
+
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/null_mutex.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/mat2x4.hpp:
+
+/usr/include/c++/15.1.1/vector:
+
+/usr/include/c++/15.1.1/tuple:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat2x3.hpp:
+
+/usr/include/c++/15.1.1/bits/atomic_timed_wait.h:
+
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat2x4.hpp:
+
+/usr/include/c++/15.1.1/cwchar:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float4x4.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat4x2.inl:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_vec2.inl:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double4x2_precision.hpp:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_relational.hpp:
+
+/usr/include/c++/15.1.1/bits/alloc_traits.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat3x4.hpp:
 
@@ -1204,6 +1330,20 @@ GameEngine/libGameEngine.a:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/packing.hpp:
 
+/usr/lib/libmvec.so.1:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/bits/fp-logb.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_projection.inl:
+
+/usr/include/c++/15.1.1/bits/ranges_uninitialized.h:
+
+/usr/include/c++/15.1.1/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/15.1.1/bits/stl_tempbuf.h:
+
 /home/joseph/coding/cpp/dread/GameEngine/spdlog/mdc.h:
 
 /usr/include/c++/15.1.1/bits/locale_facets_nonio.tcc:
@@ -1214,9 +1354,13 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/bits/locale_classes.h:
 
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat2x3.inl:
+/usr/include/bits/uio_lim.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_transform.inl:
 
 /usr/include/sys/single_threaded.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_common.inl:
 
 /usr/include/asm-generic/errno.h:
 
@@ -1238,33 +1382,15 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/bits/locale_classes.tcc:
 
-/usr/include/bits/math-vector.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/mat3x3.hpp:
-
-/usr/include/bits/uio_lim.h:
-
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_uint4_sized.hpp:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float3x4_precision.hpp:
 
 /usr/include/c++/15.1.1/concepts:
 
-/usr/include/c++/15.1.1/tr1/legendre_function.tcc:
-
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_double4.hpp:
 
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float4x3.hpp:
-
-/usr/include/c++/15.1.1/debug/debug.h:
-
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat2x4.inl:
-
-/usr/include/bits/flt-eval-method.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat3x2.inl:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double3x2_precision.hpp:
 
 /usr/include/c++/15.1.1/bits/stream_iterator.h:
 
@@ -1282,7 +1408,7 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/bits/sstream.tcc:
 
-/usr/include/c++/15.1.1/tr1/riemann_zeta.tcc:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_uint1.hpp:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float2x3.hpp:
 
@@ -1300,6 +1426,8 @@ GameEngine/libGameEngine.a:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float3x3.hpp:
 
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
 /usr/include/bits/types/struct_timeval.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/func_geometric.inl:
@@ -1316,23 +1444,11 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/ext/alloc_traits.h:
 
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/periodic_worker.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/c++/15.1.1/bits/std_abs.h:
-
-/usr/include/c++/15.1.1/memory:
-
 /usr/include/c++/15.1.1/bits/cxxabi_forced.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/_fixes.hpp:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/compute_common.hpp:
-
-/usr/include/bits/stdlib-float.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_int4_sized.hpp:
 
 /usr/include/c++/15.1.1/bits/atomic_lockfree_defines.h:
 
@@ -1340,31 +1456,167 @@ GameEngine/libGameEngine.a:
 
 /home/joseph/coding/cpp/dread/GameEngine/SceneManagement/GameObject.h:
 
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/func_common.inl:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/func_exponential.inl:
-
-/usr/include/bits/errno.h:
-
-/usr/include/c++/15.1.1/bits/exception.h:
-
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double3x3.hpp:
 
 /usr/include/bits/time64.h:
 
 /usr/include/c++/15.1.1/bits/hashtable.h:
 
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/mat3x4.hpp:
+/usr/include/bits/wchar.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_float.hpp:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/c++/15.1.1/bits/allocated_ptr.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/c++/15.1.1/ext/string_conversions.h:
+
+/usr/include/bits/cpu-set.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/c++/15.1.1/bits/uses_allocator.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/c++/15.1.1/bits/exception.h:
+
+/usr/include/bits/fcntl.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/c++/15.1.1/semaphore:
+
+/usr/include/bits/floatn.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat3x2.inl:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double3x2_precision.hpp:
+
+/usr/include/bits/flt-eval-method.h:
+
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/registry.h:
+
+/usr/include/bits/getopt_core.h:
+
+/usr/include/c++/15.1.1/bits/ranges_util.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/time_members.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/mat3x2.hpp:
+
+/usr/include/bits/getopt_posix.h:
+
+/usr/include/bits/iscanonical.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/c++/15.1.1/bits/atomic_base.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/c++/15.1.1/bits/functexcept.h:
+
+/usr/include/c++/15.1.1/backward/auto_ptr.h:
+
+/usr/include/c++/15.1.1/bits/istream.tcc:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/epsilon.hpp:
+
+/usr/include/bits/types/struct_itimerspec.h:
+
+/usr/include/c++/15.1.1/bits/this_thread_sleep.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_bool2_precision.hpp:
+
+/usr/include/bits/locale.h:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/bits/mathcalls-macros.h:
+
+/usr/include/c++/15.1.1/format:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/c++/15.1.1/bits/refwrap.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_bool1_precision.hpp:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/posix_opt.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double2x2.hpp:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/c++/15.1.1/ext/numeric_traits.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/semaphore.h:
+
+/usr/include/bits/stat.h:
+
+/usr/include/bits/statx-generic.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/common.hpp:
+
+/usr/include/bits/statx.h:
+
+/usr/include/c++/15.1.1/bits/new_allocator.h:
+
+/usr/include/c++/15.1.1/typeinfo:
+
+/usr/include/bits/wctype-wchar.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_geometric.hpp:
+
+/usr/include/bits/stdint-least.h:
+
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/periodic_worker.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/quaternion.hpp:
+
+/usr/include/c++/15.1.1/bits/std_abs.h:
+
+/usr/include/c++/15.1.1/memory:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_int4_sized.hpp:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float3x2.hpp:
+
+/home/joseph/coding/cpp/dread/GameEngine/spdlog/details/log_msg.h:
+
+/usr/include/c++/15.1.1/bits/std_thread.h:
+
+/usr/include/bits/syscall.h:
+
+/usr/include/bits/thread-shared-types.h:
 
 /usr/include/bits/timex.h:
 
 /usr/include/c++/15.1.1/bits/codecvt.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double4x3_precision.hpp:
-
-/usr/include/bits/types/FILE.h:
-
-/usr/include/linux/posix_types.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float3x3_precision.hpp:
 
@@ -1388,15 +1640,15 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/atomic:
 
+/usr/include/ctype.h:
+
+/usr/include/c++/15.1.1/bits/cxxabi_init_exception.h:
+
 /usr/include/bits/types/mbstate_t.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat4x4.hpp:
 
 /usr/include/bits/types/sigset_t.h:
-
-/usr/include/c++/15.1.1/bits/this_thread_sleep.h:
-
-/usr/include/bits/types/struct_itimerspec.h:
 
 /usr/include/bits/types/struct_statx.h:
 
@@ -1411,10 +1663,6 @@ GameEngine/libGameEngine.a:
 /usr/include/bits/types/wint_t.h:
 
 /usr/include/bits/typesizes.h:
-
-/usr/include/bits/unistd_ext.h:
-
-/usr/include/linux/falloc.h:
 
 /usr/include/bits/waitflags.h:
 
@@ -1450,17 +1698,11 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/bits/basic_string.tcc:
 
-/usr/include/c++/15.1.1/cstdint:
-
-/usr/include/linux/sched/types.h:
-
 /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++locale.h:
 
 /usr/include/c++/15.1.1/bits/shared_ptr.h:
 
 /usr/include/c++/15.1.1/bits/char_traits.h:
-
-/usr/include/limits.h:
 
 /usr/include/c++/15.1.1/bits/charconv.h:
 
@@ -1480,10 +1722,6 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/streambuf:
 
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/messages_members.h:
-
-/usr/include/c++/15.1.1/bits/formatfwd.h:
-
 /usr/include/c++/15.1.1/bits/functional_hash.h:
 
 /usr/include/c++/15.1.1/bits/hash_bytes.h:
@@ -1499,6 +1737,8 @@ GameEngine/libGameEngine.a:
 /usr/include/c++/15.1.1/bits/locale_facets.tcc:
 
 /usr/include/asm/unistd_64.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/matrix_transform.hpp:
 
 /home/joseph/coding/cpp/dread/GameEngine/spdlog/tweakme.h:
 
@@ -1520,15 +1760,9 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/ratio:
 
-/usr/include/c++/15.1.1/bits/locale_facets_nonio.h:
-
-/usr/include/c++/15.1.1/bits/stl_iterator.h:
-
 /usr/include/c++/15.1.1/bits/localefwd.h:
 
 /usr/include/c++/15.1.1/bits/memoryfwd.h:
-
-/usr/include/locale.h:
 
 /usr/include/c++/15.1.1/bits/exception_defines.h:
 
@@ -1552,31 +1786,23 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/bits/stl_relops.h:
 
-/usr/include/bits/getopt_posix.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/mat3x2.hpp:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/time_members.h:
-
-/usr/include/c++/15.1.1/bits/out_ptr.h:
-
 /usr/include/c++/15.1.1/bits/predefined_ops.h:
 
 /usr/include/c++/15.1.1/pstl/glue_memory_defs.h:
 
 /usr/include/c++/15.1.1/bits/ptr_traits.h:
 
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_trigonometric.hpp:
+
 /usr/include/bits/types/error_t.h:
 
 /usr/include/c++/15.1.1/bits/range_access.h:
 
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+/usr/include/c++/15.1.1/bits/ranges_algobase.h:
+
 /usr/include/c++/15.1.1/bits/stl_tree.h:
-
-/usr/include/c++/15.1.1/bits/ranges_uninitialized.h:
-
-/usr/include/c++/15.1.1/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/15.1.1/bits/stl_tempbuf.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat4x3.hpp:
 
@@ -1590,11 +1816,11 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/bits/stl_algo.h:
 
-/usr/include/endian.h:
+/usr/include/c++/15.1.1/tr1/poly_laguerre.tcc:
 
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/sinks/ansicolor_sink-inl.h:
+/usr/include/c++/15.1.1/pstl/pstl_config.h:
 
-/usr/include/c++/15.1.1/tr1/hypergeometric.tcc:
+/usr/include/c++/15.1.1/bits/stl_construct.h:
 
 /usr/include/c++/15.1.1/bits/stl_function.h:
 
@@ -1606,17 +1832,25 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/bits/unique_lock.h:
 
-/usr/include/bits/types/struct_FILE.h:
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/quaternion_double_precision.hpp:
 
 /home/joseph/coding/cpp/dread/GameEngine/spdlog/pattern_formatter.h:
 
+/usr/include/bits/types/struct_FILE.h:
+
 /usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+
+/usr/include/c++/15.1.1/bits/stl_uninitialized.h:
 
 /usr/lib/libc.so.6:
 
 /usr/include/bits/fp-fast.h:
 
 /usr/include/c++/15.1.1/bits/streambuf_iterator.h:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/gtc/type_ptr.inl:
 
 /usr/include/c++/15.1.1/bits/string_view.tcc:
 
@@ -1630,8 +1864,6 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/bits/unordered_map.h:
 
-/usr/include/linux/errno.h:
-
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_uint2.hpp:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_int2.hpp:
@@ -1642,19 +1874,13 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/bits/version.h:
 
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/vector_double1.hpp:
+
 /usr/include/c++/15.1.1/cassert:
 
 /usr/include/c++/15.1.1/cfloat:
 
 /usr/include/c++/15.1.1/chrono:
-
-/usr/include/c++/15.1.1/pstl/pstl_config.h:
-
-/usr/include/c++/15.1.1/bits/stl_construct.h:
-
-/usr/include/c++/15.1.1/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/mat2x2.hpp:
 
@@ -1668,29 +1894,17 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/condition_variable:
 
-/usr/include/c++/15.1.1/cstdio:
-
 /usr/include/c++/15.1.1/cstring:
 
 /usr/include/c++/15.1.1/bits/quoted_string.h:
 
 /usr/include/c++/15.1.1/ctime:
 
-/usr/include/linux/close_range.h:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float4x4.hpp:
-
-/usr/include/c++/15.1.1/cwchar:
-
 /usr/include/c++/15.1.1/ext/aligned_buffer.h:
 
 /usr/include/c++/15.1.1/ext/atomicity.h:
 
 /usr/include/c++/15.1.1/ext/type_traits.h:
-
-/home/joseph/coding/cpp/dread/GameEngine/spdlog/common.h:
-
-/usr/include/c++/15.1.1/initializer_list:
 
 /usr/include/alloca.h:
 
@@ -1704,9 +1918,9 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/iterator:
 
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float3x2_precision.hpp:
-
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_double3x2.hpp:
+
+/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/ext/matrix_float3x2_precision.hpp:
 
 /usr/include/c++/15.1.1/limits:
 
@@ -1724,13 +1938,11 @@ GameEngine/libGameEngine.a:
 
 /usr/include/c++/15.1.1/pstl/glue_algorithm_defs.h:
 
-/usr/include/gnu/stubs.h:
-
 /usr/include/c++/15.1.1/sstream:
 
-/usr/include/bits/long-double.h:
-
 /home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat4x4.inl:
+
+/usr/include/bits/long-double.h:
 
 /usr/include/c++/15.1.1/stdexcept:
 
@@ -1739,59 +1951,3 @@ GameEngine/libGameEngine.a:
 /usr/include/c++/15.1.1/system_error:
 
 /usr/include/c++/15.1.1/tr1/ell_integral.tcc:
-
-/home/joseph/coding/cpp/dread/GameEngine/Renderer/TriangleTest.h:
-
-/usr/include/c++/15.1.1/tr1/modified_bessel_func.tcc:
-
-/home/joseph/coding/cpp/dread/ThirdParty/glm/glm/detail/type_mat2x3.hpp:
-
-/usr/include/c++/15.1.1/vector:
-
-/usr/include/c++/15.1.1/tuple:
-
-/usr/include/c++/15.1.1/unordered_map:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
-
-/usr/include/c++/15.1.1/bits/stl_uninitialized.h:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
-
-/usr/include/c++/15.1.1/bits/ranges_algobase.h:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/os_defines.h:
-
-/usr/include/c++/15.1.1/bits/cxxabi_init_exception.h:
-
-/usr/include/ctype.h:
-
-/usr/include/fcntl.h:
-
-/usr/include/features-time64.h:
-
-/usr/lib/crtn.o:
-
-/usr/include/linux/limits.h:
-
-ThirdParty/imgui/libimgui.a:
-
-/usr/include/linux/stat.h:
-
-/usr/lib/libmvec.so.1:
-
-/usr/include/bits/fp-logb.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/linux/types.h:
-
-/usr/include/math.h:
-
-/usr/include/pthread.h:
-
-/usr/include/semaphore.h:

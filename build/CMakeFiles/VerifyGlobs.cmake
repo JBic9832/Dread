@@ -18,6 +18,7 @@ set(OLD_GLOB
   "/home/joseph/coding/cpp/dread/GameEngine/Renderer/Shader.cpp"
   "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.cpp"
   "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.cpp"
+  "/home/joseph/coding/cpp/dread/GameEngine/SceneManagement/Camera.cpp"
   "/home/joseph/coding/cpp/dread/GameEngine/SceneManagement/GameObject.cpp"
   "/home/joseph/coding/cpp/dread/GameEngine/SceneManagement/Transform.cpp"
   )
@@ -47,6 +48,7 @@ set(OLD_GLOB
   "/home/joseph/coding/cpp/dread/GameEngine/Renderer/TriangleTest.h"
   "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexArray.h"
   "/home/joseph/coding/cpp/dread/GameEngine/Renderer/VertexBuffer.h"
+  "/home/joseph/coding/cpp/dread/GameEngine/SceneManagement/Camera.h"
   "/home/joseph/coding/cpp/dread/GameEngine/SceneManagement/GameObject.h"
   "/home/joseph/coding/cpp/dread/GameEngine/SceneManagement/Transform.h"
   "/home/joseph/coding/cpp/dread/GameEngine/spdlog/async.h"

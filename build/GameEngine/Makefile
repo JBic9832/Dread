@@ -467,6 +467,30 @@ Renderer/VertexBuffer.cpp.s:
 	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.s
 .PHONY : Renderer/VertexBuffer.cpp.s
 
+SceneManagement/Camera.o: SceneManagement/Camera.cpp.o
+.PHONY : SceneManagement/Camera.o
+
+# target to build an object file
+SceneManagement/Camera.cpp.o:
+	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/SceneManagement/Camera.cpp.o
+.PHONY : SceneManagement/Camera.cpp.o
+
+SceneManagement/Camera.i: SceneManagement/Camera.cpp.i
+.PHONY : SceneManagement/Camera.i
+
+# target to preprocess a source file
+SceneManagement/Camera.cpp.i:
+	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/SceneManagement/Camera.cpp.i
+.PHONY : SceneManagement/Camera.cpp.i
+
+SceneManagement/Camera.s: SceneManagement/Camera.cpp.s
+.PHONY : SceneManagement/Camera.s
+
+# target to generate assembly for a file
+SceneManagement/Camera.cpp.s:
+	cd /home/joseph/coding/cpp/dread/build && $(MAKE) $(MAKESILENT) -f GameEngine/CMakeFiles/GameEngine.dir/build.make GameEngine/CMakeFiles/GameEngine.dir/SceneManagement/Camera.cpp.s
+.PHONY : SceneManagement/Camera.cpp.s
+
 SceneManagement/GameObject.o: SceneManagement/GameObject.cpp.o
 .PHONY : SceneManagement/GameObject.o
 
@@ -566,6 +590,9 @@ help:
 	@echo "... Renderer/VertexBuffer.o"
 	@echo "... Renderer/VertexBuffer.i"
 	@echo "... Renderer/VertexBuffer.s"
+	@echo "... SceneManagement/Camera.o"
+	@echo "... SceneManagement/Camera.i"
+	@echo "... SceneManagement/Camera.s"
 	@echo "... SceneManagement/GameObject.o"
 	@echo "... SceneManagement/GameObject.i"
 	@echo "... SceneManagement/GameObject.s"

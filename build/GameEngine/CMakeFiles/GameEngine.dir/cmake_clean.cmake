@@ -27,6 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GameEngine.dir/Renderer/VertexArray.cpp.o.d"
   "CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o"
   "CMakeFiles/GameEngine.dir/Renderer/VertexBuffer.cpp.o.d"
+  "CMakeFiles/GameEngine.dir/SceneManagement/Camera.cpp.o"
+  "CMakeFiles/GameEngine.dir/SceneManagement/Camera.cpp.o.d"
   "CMakeFiles/GameEngine.dir/SceneManagement/GameObject.cpp.o"
   "CMakeFiles/GameEngine.dir/SceneManagement/GameObject.cpp.o.d"
   "CMakeFiles/GameEngine.dir/SceneManagement/Transform.cpp.o"
