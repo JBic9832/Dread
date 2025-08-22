@@ -1,4 +1,4 @@
-build/
-.git/
-.cache/
+/build
+/.git
+/.cache
 Untitled

@@ -13,6 +13,8 @@ Application::~Application() {
 
 void Application::Run() {
 	glEnable(GL_DEPTH_TEST);
+	glfwSetCursorPos(m_Window.WindowHandle(), 1260 / 2, 720 / 2);
+	glfwSetInputMode(m_Window.WindowHandle(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	while (!m_Window.ShouldClose()) {
 		glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
