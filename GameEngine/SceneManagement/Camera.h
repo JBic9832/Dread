@@ -31,7 +31,7 @@ public:
 
 private:
 	void updateCameraRotation(GLFWwindow* window);
-	void processInput(GLFWwindow* window, float deltaTime);
+	void processInput(float deltaTime);
 
 private:
 	glm::mat4 m_ViewMatrix = glm::mat4(1.0f);

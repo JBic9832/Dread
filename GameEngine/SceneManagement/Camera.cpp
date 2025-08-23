@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+#include "InputManager/InputManager.h"
+
 namespace Dread {
 
 Camera::Camera(GLFWwindow* window)
@@ -14,25 +16,25 @@ Camera::Camera(GLFWwindow* window)
 
 void Camera::update(GLFWwindow* window, float deltaTime)
 {
-	processInput(window, deltaTime);
+	processInput(deltaTime);
 	updateCameraRotation(window);
 	m_ViewMatrix = glm::lookAt(m_CameraPosition, m_CameraPosition + m_CameraFront, m_CameraUp);
 }
 
-void Camera::processInput(GLFWwindow* window, float deltaTime) {
-	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+void Camera::processInput(float deltaTime) {
+	if (InputManager::GetKey(GLFW_KEY_W))
 		m_CameraPosition += m_CameraSpeed * m_CameraFront * deltaTime;
-	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+	if (InputManager::GetKey(GLFW_KEY_S))
 		m_CameraPosition -= m_CameraSpeed * m_CameraFront * deltaTime;
-	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+	if (InputManager::GetKey(GLFW_KEY_A))
 		m_CameraPosition -= glm::normalize(glm::cross(m_CameraFront, m_CameraUp)) * m_CameraSpeed * deltaTime;
-	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+	if (InputManager::GetKey(GLFW_KEY_D))
 		m_CameraPosition += glm::normalize(glm::cross(m_CameraFront, m_CameraUp)) * m_CameraSpeed * deltaTime;
-	if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
+	if (InputManager::GetKey(GLFW_KEY_SPACE))
 		m_CameraPosition += m_CameraUp * m_CameraSpeed * deltaTime;
-	if (glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS || glfwGetKey(window, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS)
+	if (InputManager::GetKey(GLFW_KEY_LEFT_SHIFT) || InputManager::GetKey(GLFW_KEY_LEFT_CONTROL))
 		m_CameraPosition -= m_CameraUp * m_CameraSpeed * deltaTime;
-	if (glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS)
+	if (InputManager::GetKeyDown(GLFW_KEY_M))
 		std::cout << "X: " << m_CameraPosition.x << "Y: " << m_CameraPosition.y << "Z: " << m_CameraPosition.z << std::endl;
 }
 
