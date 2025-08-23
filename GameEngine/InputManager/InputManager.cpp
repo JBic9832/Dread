@@ -5,8 +5,7 @@
 
 namespace Dread {
 
-std::map<int, bool> InputManager::s_Keys;
-std::map<int, bool> InputManager::s_Triggered;
+std::unordered_map<int, KeyState> InputManager::s_Keys;
 
 InputManager::InputManager(EventSystem& eventSystem) : m_EventSystem { eventSystem } {
 	m_EventSystem.Subscribe("KeyPressed", [this](const Event& e) {
@@ -24,29 +23,39 @@ void InputManager::ProcessInput(const Event& e) {
 		auto keyEvent = dynamic_cast<const KeyPressedEvent*>(&e);
 
 		if (keyEvent) {
-			s_Keys[keyEvent->_keyCode] = true;
+			auto& state = s_Keys[keyEvent->_keyCode];
+			if (!state.held) {
+				state.pressed = true;
+			}
+			state.held = true;
 		}
 	} else if (e.GetName() == "KeyReleased") {
 		auto keyEvent = dynamic_cast<const KeyReleasedEvent*>(&e);
 
 		if (keyEvent) {
-			s_Triggered[keyEvent->_keyCode] = false;
-			s_Keys[keyEvent->_keyCode] = false;
+			auto& state = s_Keys[keyEvent->_keyCode];
+			state.held = false;
+			state.released = true;
 		}
 	}
 }
 
 bool InputManager::GetKey(int key) {
-	return s_Keys[key];
+	return s_Keys[key].held;
 }
 
 bool InputManager::GetKeyDown(int key) {
-	// Check if the key is held
-	if(!s_Triggered[key] && s_Keys[key]) {
-		s_Triggered[key] = true;
-		return true;
-	} else {
-		return false;
+	return s_Keys[key].pressed;
+}
+
+bool InputManager::GetKeyUp(int key) {
+	return s_Keys[key].released;
+}
+
+void InputManager::EndFrame() {
+	for (auto& [key, state] : s_Keys) {
+		state.pressed = false;
+		state.released = false;
 	}
 }
 

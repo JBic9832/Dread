@@ -3,6 +3,7 @@
 #include <iostream>
 
 #include "InputManager/InputManager.h"
+#include "Core/Logger.h"
 
 namespace Dread {
 
@@ -21,6 +22,7 @@ void Camera::update(GLFWwindow* window, float deltaTime)
 	m_ViewMatrix = glm::lookAt(m_CameraPosition, m_CameraPosition + m_CameraFront, m_CameraUp);
 }
 
+
 void Camera::processInput(float deltaTime) {
 	if (InputManager::GetKey(GLFW_KEY_W))
 		m_CameraPosition += m_CameraSpeed * m_CameraFront * deltaTime;
@@ -36,8 +38,11 @@ void Camera::processInput(float deltaTime) {
 		m_CameraPosition -= m_CameraUp * m_CameraSpeed * deltaTime;
 	if (InputManager::GetKeyDown(GLFW_KEY_M))
 		std::cout << "X: " << m_CameraPosition.x << "Y: " << m_CameraPosition.y << "Z: " << m_CameraPosition.z << std::endl;
+	if (InputManager::GetKeyDown(GLFW_KEY_ESCAPE)) {
+		m_Disabled = !m_Disabled;
+		DREAD_CORE_INFO("CAMERA DISABLE STATE {0}", m_Disabled);
+	}
 }
-
 
 void Camera::updateCameraRotation(GLFWwindow* window) {
 	double xpos;
