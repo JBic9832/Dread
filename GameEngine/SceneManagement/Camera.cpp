@@ -76,4 +76,29 @@ void Camera::updateCameraRotation(GLFWwindow* window) {
 	m_CameraFront = glm::normalize(front);
 }
 
+glm::mat4 Camera::GetViewMatrix() const {
+	return m_ViewMatrix;
+}
+
+glm::vec3 Camera::GetCameraPosition() const {
+	return m_CameraPosition;
+}
+
+void Camera::SetDisableRotation(bool disabled) {
+	m_Disabled = disabled;
+}
+
+void Camera::SetCameraPosition(const glm::vec3& position) {
+	m_CameraPosition = position;
+}
+
+void Camera::InvertPitch() {
+	m_Pitch = -m_Pitch;
+}
+
+void Camera::UpdateViewMatrix(GLFWwindow* window) {
+	updateCameraRotation(window);
+	m_ViewMatrix = glm::lookAt(m_CameraPosition, m_CameraPosition + m_CameraFront, m_CameraUp);
+}
+
 }

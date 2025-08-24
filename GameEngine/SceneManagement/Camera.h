@@ -17,17 +17,15 @@ public:
 	// FIX THIS NONSENSE!!!
 	// ALSO, make input checks use event system. We can't
 	// be raw dawging that.
-	glm::mat4 GetViewMatrix() { return m_ViewMatrix; }
-	glm::vec3 GetCameraPosition() { return m_CameraPosition; }
-	void setDisableRotation(bool disable) { m_Disabled = disable; }
-	void setCameraPosition(glm::vec3 position) { m_CameraPosition = position; };
-	float getCameraPitch() { return m_Pitch; }
-	void invertPitch() { m_Pitch = -m_Pitch; };
-	void updateViewMatrix(GLFWwindow* window) {
-		updateCameraRotation(window);
-		m_ViewMatrix = glm::lookAt(m_CameraPosition, m_CameraPosition + m_CameraFront, m_CameraUp);
-	}
-	
+	glm::mat4 GetViewMatrix() const;
+	glm::vec3 GetCameraPosition() const;
+	float GetCameraPitch() { return m_Pitch; }
+
+	void SetDisableRotation(bool disable);
+	void SetCameraPosition(const glm::vec3& position);
+
+	void InvertPitch();
+	void UpdateViewMatrix(GLFWwindow* window);
 
 private:
 	void updateCameraRotation(GLFWwindow* window);
