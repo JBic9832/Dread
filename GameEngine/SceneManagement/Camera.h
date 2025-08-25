@@ -3,20 +3,20 @@
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include "GameObject.h"
 
 namespace Dread {
 
-class Camera
-{
+// TODO
+// Refactor camera class to use GameObject API.
+// This is the start to creating a uniform way to 
+// script objects.
+class Camera : public GameObject {
 public:
 	Camera(GLFWwindow* window);
 
 	void Update(GLFWwindow* window, float deltaTime);
 
-	// TODO:
-	// FIX THIS NONSENSE!!!
-	// ALSO, make input checks use event system. We can't
-	// be raw dawging that.
 	glm::mat4 GetViewMatrix() const;
 	glm::vec3 GetCameraPosition() const;
 	float GetCameraPitch() { return m_Pitch; }
