@@ -3,8 +3,7 @@
 #include <vector>
 
 namespace Dread {
-class Cube {
-public:
+struct Cube {
 	Cube() {
 		m_Mesh = std::make_shared<Mesh>();
 		std::vector<Vertex> vertices = {
