@@ -12,4 +12,8 @@ void Transform::SetPosition(const glm::vec3& newPos) {
 	m_Position = newPos;
 }
 
+glm::vec3 Transform::GetPosition() const {
+	return m_Position;
+}
+
 }

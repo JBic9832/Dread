@@ -13,8 +13,9 @@ public:
 	void AttachMesh(MeshRenderer meshRenderer);
 	void DrawMesh();
 
-private:
 	Transform m_Transform;
+
+private:
 	std::optional<MeshRenderer> m_AttachedMesh; // optional
 };
 

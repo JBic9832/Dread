@@ -15,7 +15,7 @@ Camera::Camera(GLFWwindow* window)
 	m_LastMouseY = height / 2.0f;
 }
 
-void Camera::update(GLFWwindow* window, float deltaTime)
+void Camera::Update(GLFWwindow* window, float deltaTime)
 {
 	processInput(deltaTime);
 	updateCameraRotation(window);

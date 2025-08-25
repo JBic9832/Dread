@@ -9,6 +9,7 @@ public:
 	Transform();
 
 	void SetPosition(const glm::vec3& newPos);
+	glm::vec3 GetPosition() const;
 	glm::vec3 GetScale() const;
 
 private:

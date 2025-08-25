@@ -11,7 +11,7 @@ class Camera
 public:
 	Camera(GLFWwindow* window);
 
-	void update(GLFWwindow* window, float deltaTime);
+	void Update(GLFWwindow* window, float deltaTime);
 
 	// TODO:
 	// FIX THIS NONSENSE!!!
