@@ -13,13 +13,13 @@ public:
 	Shader(const std::string &vertexFilePath, const std::string &fragmentFilePath);
 	void Bind();
 	void UnBind();
-	void setUniformMatrix4f(const std::string &uniformName, glm::mat4 matrix);
-	void setUniformMatrix3f(const std::string &uniformName, glm::mat3 matrix);
-	void setUniformVec4f(const std::string &uniformName, glm::vec4 vector4);
-	void setUniformVec3f(const std::string &uniformName, glm::vec3 vector3);
-	void setUniformVec2f(const std::string &uniformName, glm::vec2 vector2);
-	void setUniformInt(const std::string &uniformName, int value);
-	void setUniformFloat(const std::string &uniformName, float value);
+	void SetUniformMatrix4f(const std::string &uniformName, glm::mat4 matrix);
+	void SetUniformMatrix3f(const std::string &uniformName, glm::mat3 matrix);
+	void SetUniformVec4f(const std::string &uniformName, glm::vec4 vector4);
+	void SetUniformVec3f(const std::string &uniformName, glm::vec3 vector3);
+	void SetUniformVec2f(const std::string &uniformName, glm::vec2 vector2);
+	void SetUniformInt(const std::string &uniformName, int value);
+	void SetUniformFloat(const std::string &uniformName, float value);
 	unsigned int GetRendererId() { return m_RendererId; }
 
 private:

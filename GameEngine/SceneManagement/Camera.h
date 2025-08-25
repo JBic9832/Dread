@@ -9,9 +9,10 @@
 namespace Dread {
 
 // TODO
-// Refactor camera class to use GameObject API.
-// This is the start to creating a uniform way to 
-// script objects.
+// Continue to integreate the attributes from the base class.
+// Rotation:
+// 		- Pitch
+// 		- Yaw
 class Camera : public GameObject {
 public:
 	Camera(GLFWwindow* window);

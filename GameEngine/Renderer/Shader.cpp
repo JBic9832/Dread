@@ -22,43 +22,43 @@ void Shader::UnBind()
 	glUseProgram(0);
 }
 
-void Shader::setUniformMatrix4f(const std::string& uniformName, glm::mat4 matrix)
+void Shader::SetUniformMatrix4f(const std::string& uniformName, glm::mat4 matrix)
 {
 	unsigned int transformLoc = glGetUniformLocation(m_RendererId, uniformName.c_str());
 	glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(matrix));
 }
 
-void Shader::setUniformMatrix3f(const std::string& uniformName, glm::mat3 matrix)
+void Shader::SetUniformMatrix3f(const std::string& uniformName, glm::mat3 matrix)
 {
 	unsigned int transformLoc = glGetUniformLocation(m_RendererId, uniformName.c_str());
 	glUniformMatrix3fv(transformLoc, 1, GL_FALSE, glm::value_ptr(matrix));
 }
 
-void Shader::setUniformVec4f(const std::string& uniformName, glm::vec4 vector4)
+void Shader::SetUniformVec4f(const std::string& uniformName, glm::vec4 vector4)
 {
 	unsigned int transformLoc = glGetUniformLocation(m_RendererId, uniformName.c_str());
 	glUniform4fv(transformLoc, 1, glm::value_ptr(vector4));
 }
 
-void Shader::setUniformVec3f(const std::string& uniformName, glm::vec3 vector3)
+void Shader::SetUniformVec3f(const std::string& uniformName, glm::vec3 vector3)
 {
 	unsigned int vecLoc = glGetUniformLocation(m_RendererId, uniformName.c_str());
 	glUniform3fv(vecLoc, 1, glm::value_ptr(vector3));
 }
 
-void Shader::setUniformVec2f(const std::string& uniformName, glm::vec2 vector2)
+void Shader::SetUniformVec2f(const std::string& uniformName, glm::vec2 vector2)
 {
 	unsigned int vecLoc = glGetUniformLocation(m_RendererId, uniformName.c_str());
 	glUniform3fv(vecLoc, 1, glm::value_ptr(vector2));
 }
 
-void Shader::setUniformInt(const std::string& uniformName, int value)
+void Shader::SetUniformInt(const std::string& uniformName, int value)
 {
 	unsigned int loc = glGetUniformLocation(m_RendererId, uniformName.c_str());
 	glUniform1i(loc, value);
 }
 
-void Shader::setUniformFloat(const std::string& uniformName, float value)
+void Shader::SetUniformFloat(const std::string& uniformName, float value)
 {
 	unsigned int loc = glGetUniformLocation(m_RendererId, uniformName.c_str());
 	glUniform1f(loc, value);
