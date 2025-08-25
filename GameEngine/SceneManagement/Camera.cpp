@@ -19,25 +19,25 @@ void Camera::Update(GLFWwindow* window, float deltaTime)
 {
 	processInput(deltaTime);
 	updateCameraRotation(window);
-	m_ViewMatrix = glm::lookAt(m_CameraPosition, m_CameraPosition + m_CameraFront, m_CameraUp);
+	m_ViewMatrix = glm::lookAt(m_Transform.GetPosition(), m_Transform.GetPosition() + m_CameraFront, m_CameraUp);
 }
 
 
 void Camera::processInput(float deltaTime) {
 	if (InputManager::GetKey(GLFW_KEY_W))
-		m_CameraPosition += m_CameraSpeed * m_CameraFront * deltaTime;
+		m_Transform.SetPosition(m_Transform.GetPosition() + (m_CameraSpeed * m_CameraFront * deltaTime));
 	if (InputManager::GetKey(GLFW_KEY_S))
-		m_CameraPosition -= m_CameraSpeed * m_CameraFront * deltaTime;
+		m_Transform.SetPosition(m_Transform.GetPosition() - (m_CameraSpeed * m_CameraFront * deltaTime));
 	if (InputManager::GetKey(GLFW_KEY_A))
-		m_CameraPosition -= glm::normalize(glm::cross(m_CameraFront, m_CameraUp)) * m_CameraSpeed * deltaTime;
+		m_Transform.SetPosition(m_Transform.GetPosition() - glm::normalize(glm::cross(m_CameraFront, m_CameraUp)) * m_CameraSpeed * deltaTime);
 	if (InputManager::GetKey(GLFW_KEY_D))
-		m_CameraPosition += glm::normalize(glm::cross(m_CameraFront, m_CameraUp)) * m_CameraSpeed * deltaTime;
+		m_Transform.SetPosition(m_Transform.GetPosition() + glm::normalize(glm::cross(m_CameraFront, m_CameraUp)) * m_CameraSpeed * deltaTime);
 	if (InputManager::GetKey(GLFW_KEY_SPACE))
-		m_CameraPosition += m_CameraUp * m_CameraSpeed * deltaTime;
+		m_Transform.SetPosition(m_Transform.GetPosition() + (m_CameraUp * m_CameraSpeed * deltaTime));
 	if (InputManager::GetKey(GLFW_KEY_LEFT_SHIFT) || InputManager::GetKey(GLFW_KEY_LEFT_CONTROL))
-		m_CameraPosition -= m_CameraUp * m_CameraSpeed * deltaTime;
+		m_Transform.SetPosition(m_Transform.GetPosition() - (m_CameraUp * m_CameraSpeed * deltaTime));
 	if (InputManager::GetKeyDown(GLFW_KEY_M))
-		std::cout << "X: " << m_CameraPosition.x << "Y: " << m_CameraPosition.y << "Z: " << m_CameraPosition.z << std::endl;
+		DREAD_CORE_INFO("CAMERA POSITION -> X: {0}, Y: {1}, Z: {2}\n", m_Transform.GetPosition().x, m_Transform.GetPosition().y, m_Transform.GetPosition().z);
 	if (InputManager::GetKeyDown(GLFW_KEY_ESCAPE)) {
 		m_Disabled = !m_Disabled;
 		DREAD_CORE_INFO("CAMERA DISABLE STATE {0}", m_Disabled);
@@ -81,7 +81,7 @@ glm::mat4 Camera::GetViewMatrix() const {
 }
 
 glm::vec3 Camera::GetCameraPosition() const {
-	return m_CameraPosition;
+	return m_Transform.GetPosition();
 }
 
 void Camera::SetDisableRotation(bool disabled) {
@@ -89,7 +89,7 @@ void Camera::SetDisableRotation(bool disabled) {
 }
 
 void Camera::SetCameraPosition(const glm::vec3& position) {
-	m_CameraPosition = position;
+	m_Transform.SetPosition(position);
 }
 
 void Camera::InvertPitch() {
@@ -98,7 +98,7 @@ void Camera::InvertPitch() {
 
 void Camera::UpdateViewMatrix(GLFWwindow* window) {
 	updateCameraRotation(window);
-	m_ViewMatrix = glm::lookAt(m_CameraPosition, m_CameraPosition + m_CameraFront, m_CameraUp);
+	m_ViewMatrix = glm::lookAt(m_Transform.GetPosition(), m_Transform.GetPosition() + m_CameraFront, m_CameraUp);
 }
 
 }

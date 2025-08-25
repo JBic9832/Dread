@@ -1,5 +1,6 @@
 #pragma once
 
+#define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -33,7 +34,6 @@ private:
 
 private:
 	glm::mat4 m_ViewMatrix = glm::mat4(1.0f);
-	glm::vec3 m_CameraPosition = glm::vec3(0.0f, 1.0f, 3.0f);
 	glm::vec3 m_CameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
 	glm::vec3 m_CameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
 	float m_CameraSpeed = 5.0f;
