@@ -13,6 +13,9 @@ namespace Dread {
 // Rotation:
 // 		- Pitch
 // 		- Yaw
+
+
+
 class Camera : public GameObject {
 public:
 	Camera(GLFWwindow* window);

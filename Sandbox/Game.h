@@ -19,6 +19,7 @@ protected:
 private:
 	Dread::GameObject cube;
 	Dread::GameObject pyramid;
+	Dread::GameObject sphere;
 	Dread::Camera mainCamera;
 	Dread::Shader shader;
 

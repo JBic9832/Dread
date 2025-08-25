@@ -3,6 +3,7 @@
 #include "Core/Logger.h"
 #include "Renderer/Primitives/Cube.h"
 #include "Renderer/Primitives/Pyramid.h"
+#include "Renderer/Primitives/Sphere.h"
 #include "Core/Time.h"
 
 Game::Game(Dread::EventSystem& eventSystem) 
@@ -15,7 +16,12 @@ Game::Game(Dread::EventSystem& eventSystem)
 	Dread::Pyramid pyrMesh;
 	Dread::MeshRenderer pmr(pyrMesh.m_Mesh);
 	pyramid.AttachMesh(pmr);
-	pyramid.m_Transform.SetPosition(glm::vec3(-1.0f, -4.0f, 3.0f));
+	pyramid.m_Transform.SetPosition(glm::vec3(-1.0f, 4.0f, -3.0f));
+
+	Dread::Sphere sMesh;
+	Dread::MeshRenderer smr(sMesh.m_Mesh);
+	sphere.AttachMesh(smr);
+	sphere.m_Transform.SetPosition(glm::vec3(1.0f, 1.0f, -2.0f));
 
 	Dread::ResourceManager::LoadShader(RESOURCES_PATH "basic_vert.glsl", RESOURCES_PATH "basic_frag.glsl", "basic");
 	shader = Dread::ResourceManager::GetShader("basic");
@@ -26,6 +32,7 @@ Game::~Game() {}
 
 void Game::OnUpdate() {
 	mainCamera.Update(this->GetWindowHandle(), Dread::Time::deltaTime);
+	pyramid.m_Transform.SetPosition(glm::vec3(-1.0f, sin(glfwGetTime() * 5), -3.0f));
 }
 
 void Game::OnRender() {
@@ -51,7 +58,14 @@ void Game::OnRender() {
 	shader.SetUniformMatrix4f("uProjection", proj);
 	pyramid.DrawMesh();
 	
+	model = glm::mat4(1.0f);
+	model = glm::translate(model, sphere.m_Transform.GetPosition());
 
+	shader.Bind();
+	shader.SetUniformMatrix4f("uView", mainCamera.GetViewMatrix());
+	shader.SetUniformMatrix4f("uModel", model);
+	shader.SetUniformMatrix4f("uProjection", proj);
+	sphere.DrawMesh();
 }
 
 Dread::Application* CreateApplication(Dread::EventSystem& eventSystem) {
