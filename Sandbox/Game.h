@@ -17,9 +17,7 @@ protected:
 	void OnUpdate() override;
 
 private:
-	Dread::GameObject cube;
-	Dread::GameObject pyramid;
-	Dread::GameObject sphere;
+	std::unordered_map<std::string, Dread::GameObject> objects;
 	Dread::Camera mainCamera;
 	Dread::Shader shader;
 
