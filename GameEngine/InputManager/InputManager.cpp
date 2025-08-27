@@ -9,34 +9,45 @@ std::unordered_map<int, KeyState> InputManager::s_Keys;
 
 InputManager::InputManager(EventSystem& eventSystem) : m_EventSystem { eventSystem } {
 	m_EventSystem.Subscribe("KeyPressed", [this](const Event& e) {
-		this->ProcessInput(e);
+		this->keyPressed(e);
 	});
 
 	m_EventSystem.Subscribe("KeyReleased", [this](const Event& e) {
-		this->ProcessInput(e);
+		this->keyReleased(e);
+	});
+
+	m_EventSystem.Subscribe("MouseMoved", [this](const Event& e) {
+		this->mouseMoved(e);
 	});
 }
 
-void InputManager::ProcessInput(const Event& e) {
-	// Cast the event to a key pressed or released event
-	if (e.GetName() == "KeyPressed") {
-		auto keyEvent = dynamic_cast<const KeyPressedEvent*>(&e);
+void InputManager::keyPressed(const Event& e) {
+	auto keyEvent = dynamic_cast<const KeyPressedEvent*>(&e);
 
-		if (keyEvent) {
-			auto& state = s_Keys[keyEvent->_keyCode];
-			if (!state.held) {
-				state.pressed = true;
-			}
-			state.held = true;
+	if (keyEvent) {
+		auto& state = s_Keys[keyEvent->_keyCode];
+		if (!state.held) {
+			state.pressed = true;
 		}
-	} else if (e.GetName() == "KeyReleased") {
-		auto keyEvent = dynamic_cast<const KeyReleasedEvent*>(&e);
+		state.held = true;
+	}
+}
 
-		if (keyEvent) {
-			auto& state = s_Keys[keyEvent->_keyCode];
-			state.held = false;
-			state.released = true;
-		}
+void InputManager::keyReleased(const Event& e) {
+	auto keyEvent = dynamic_cast<const KeyReleasedEvent*>(&e);
+
+	if (keyEvent) {
+		auto& state = s_Keys[keyEvent->_keyCode];
+		state.held = false;
+		state.released = true;
+	}
+}
+
+void InputManager::mouseMoved(const Event& e) {
+	auto mouseEvent = dynamic_cast<const MouseMovedEvent*>(&e);
+
+	if (mouseEvent) {
+		DREAD_CORE_INFO("MOUSE POS: X: {0} Y: {1}", mouseEvent->_x, mouseEvent->_y);
 	}
 }
 

@@ -23,7 +23,10 @@ private:
 	std::string m_WindowName;
 	EventSystem& m_EventSystem;
 	void SendKeyEvent(int key, int action);
+	void SendMouseEvent(int x, int y) const;
 	static void glfwKeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
+	static void glfwCursorPosCallback(GLFWwindow* window, double xpos, double ypos);
+	static Window* createWindowUserPointer(GLFWwindow* window);
 };
 
 }

@@ -23,8 +23,12 @@ public:
 	static bool GetKey(int key);
 	static bool GetKeyUp(int key);
 
-	void ProcessInput(const Event& e);
 	void EndFrame();
+
+private:
+	void keyPressed(const Event& e);
+	void keyReleased(const Event& e);
+	void mouseMoved(const Event& e);
 
 private:
 	EventSystem& m_EventSystem;

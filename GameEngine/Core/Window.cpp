@@ -5,10 +5,22 @@
 
 namespace Dread {
 
-void Window::glfwKeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods) {
+Window* Window::createWindowUserPointer(GLFWwindow* window) {
 	Window* win = static_cast<Window*>(glfwGetWindowUserPointer(window));
+	return win;
+}
+
+void Window::glfwKeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods) {
+	Window* win = createWindowUserPointer(window);
 	if (win) {
 		win->SendKeyEvent(key, action);
+	}
+}
+
+void Window::glfwCursorPosCallback(GLFWwindow* window, double xpos, double ypos) {
+	Window* win = createWindowUserPointer(window);
+	if (win) {
+		win->SendMouseEvent((int)xpos, (int)ypos);
 	}
 }
 
@@ -30,6 +42,7 @@ Window::Window(unsigned int width, unsigned int height, const std::string& windo
 	glfwMakeContextCurrent(m_WindowHandle);
 	glfwSetWindowUserPointer(m_WindowHandle, this);
 	glfwSetKeyCallback(m_WindowHandle, glfwKeyCallback);
+	glfwSetCursorPosCallback(m_WindowHandle, glfwCursorPosCallback);
 }
 
 Window::~Window() {
@@ -51,6 +64,10 @@ void Window::SendKeyEvent(int key, int action) {
 	} else if (action == GLFW_RELEASE) {
 		m_EventSystem.Notify(KeyReleasedEvent(key));
 	}
+}
+
+void Window::SendMouseEvent(int x, int y) const {
+	m_EventSystem.Notify(MouseMovedEvent(x, y));
 }
 
 GLFWwindow* Window::WindowHandle() const {
