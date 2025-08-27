@@ -6,6 +6,7 @@
 namespace Dread {
 
 std::unordered_map<int, KeyState> InputManager::s_Keys;
+MousePosition InputManager::s_MousePos;
 
 InputManager::InputManager(EventSystem& eventSystem) : m_EventSystem { eventSystem } {
 	m_EventSystem.Subscribe("KeyPressed", [this](const Event& e) {
@@ -47,7 +48,8 @@ void InputManager::mouseMoved(const Event& e) {
 	auto mouseEvent = dynamic_cast<const MouseMovedEvent*>(&e);
 
 	if (mouseEvent) {
-		DREAD_CORE_INFO("MOUSE POS: X: {0} Y: {1}", mouseEvent->_x, mouseEvent->_y);
+		s_MousePos.x = mouseEvent->_x;
+		s_MousePos.y = mouseEvent->_y;
 	}
 }
 
@@ -61,6 +63,10 @@ bool InputManager::GetKeyDown(int key) {
 
 bool InputManager::GetKeyUp(int key) {
 	return s_Keys[key].released;
+}
+
+MousePosition InputManager::GetMousePosition() {
+	return s_MousePos;
 }
 
 void InputManager::EndFrame() {

@@ -45,15 +45,13 @@ void Camera::processInput(float deltaTime) {
 }
 
 void Camera::updateCameraRotation(GLFWwindow* window) {
-	double xpos;
-	double ypos;
-	glfwGetCursorPos(window, &xpos, &ypos);
+	MousePosition mousePos = InputManager::GetMousePosition();
 
-	float xoffset = static_cast<float>(xpos) - m_LastMouseX;
-	float yoffset = m_LastMouseY - static_cast<float>(ypos);
+	float xoffset = static_cast<float>(mousePos.x) - m_LastMouseX;
+	float yoffset = m_LastMouseY - static_cast<float>(mousePos.y);
 
-	m_LastMouseX = xpos;
-	m_LastMouseY = ypos;
+	m_LastMouseX = mousePos.x;
+	m_LastMouseY = mousePos.y;
 
 	float sens = 0.1f;
 	xoffset *= sens;

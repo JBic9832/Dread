@@ -7,6 +7,11 @@
 
 namespace Dread {
 
+struct MousePosition {
+	int x;
+	int y;
+};
+
 struct KeyState {
 	bool held = false;
 	bool pressed = false;
@@ -22,6 +27,7 @@ public:
 	// Is the key being held
 	static bool GetKey(int key);
 	static bool GetKeyUp(int key);
+	static MousePosition GetMousePosition();
 
 	void EndFrame();
 
@@ -35,6 +41,7 @@ private:
 
 private:
 	static std::unordered_map<int, KeyState> s_Keys;
+	static MousePosition s_MousePos;
 
 };
 
