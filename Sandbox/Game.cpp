@@ -5,6 +5,7 @@
 #include "Renderer/Primitives/Pyramid.h"
 #include "Renderer/Primitives/Sphere.h"
 #include "Core/Time.h"
+#include "imgui/imgui.h"
 
 Game::Game(Dread::EventSystem& eventSystem) 
 	: Dread::Application { eventSystem }
@@ -56,6 +57,10 @@ void Game::OnRender() {
 		shader.SetUniformMatrix4f("uProjection", proj);
 		go.DrawMesh();
 	}
+
+	// Draw UI
+	ImGui::ShowDemoWindow();
+
 }
 
 Dread::Application* CreateApplication(Dread::EventSystem& eventSystem) {
