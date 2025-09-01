@@ -1,11 +1,11 @@
 #include "Game.h"
 #include "InputManager/InputManager.h"
 #include "Core/Logger.h"
-#include "Renderer/Primitives/Cube.h"
-#include "Renderer/Primitives/Pyramid.h"
-#include "Renderer/Primitives/Sphere.h"
+#include "Renderer/PrimitiveMeshes/Cube.h"
+#include "Renderer/PrimitiveMeshes/Pyramid.h"
+#include "Renderer/PrimitiveMeshes/Sphere.h"
 #include "Core/Time.h"
-#include "imgui/imgui.h"
+#include "vendor/imgui/imgui.h"
 
 Game::Game(Dread::EventSystem& eventSystem) 
 	: Dread::Application { eventSystem }
@@ -40,7 +40,7 @@ Game::~Game() {}
 
 void Game::OnUpdate() {
 	mainCamera.Update(this->GetWindowHandle(), Dread::Time::deltaTime);
-	objects["pyramid"].m_Transform.SetPosition(glm::vec3(cos(glfwGetTime() * 5), sin(glfwGetTime() * 5), -3.0f));
+	objects["pyramid"].m_Transform.SetPosition(glm::vec3(-3.0f, sin(glfwGetTime() * 5), -3.0f));
 }
 
 void Game::OnRender() {
@@ -57,10 +57,6 @@ void Game::OnRender() {
 		shader.SetUniformMatrix4f("uProjection", proj);
 		go.DrawMesh();
 	}
-
-	// Draw UI
-	ImGui::ShowDemoWindow();
-
 }
 
 Dread::Application* CreateApplication(Dread::EventSystem& eventSystem) {
