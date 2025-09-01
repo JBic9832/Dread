@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Renderer/Mesh.h"
+#include "Renderer/Model.h"
 #define TINYGLTF_IMPLEMENTATION
 #define STB_IMAGE_IMPLEMENTATION
 #include "vendor/tiny_gltf/tiny_gltf.h"
@@ -10,13 +10,12 @@ namespace Dread {
 
 class GLTFLoader {
 public:
-	GLTFLoader();
-	~GLTFLoader();
-
-	static Mesh CreateMeshFromGLTF(const std::string& gltfFile);
+	static Model CreateMeshFromGLTF(const std::string& gltfFile);
 
 private:
-	static tinygltf::Model LoadModel(const std::string& fileName);
+	GLTFLoader();
+	~GLTFLoader();
+	static tinygltf::Model loadModel(const std::string& fileName);
 
 };
 

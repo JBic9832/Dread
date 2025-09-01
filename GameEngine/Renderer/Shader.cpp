@@ -4,6 +4,7 @@
 #include <sstream>
 
 #include "Core/Logger.h"
+#include "Core/FileReader.h"
 
 namespace Dread {
 
@@ -94,34 +95,8 @@ void Shader::createShader(const std::string vertexPath, const std::string fragme
 {
 	unsigned int vertexShader, fragmentShader;
 
-	std::string vertexCode;
-	std::string fragmentCode;
-	std::ifstream vShaderFile;
-	std::ifstream fShaderFile;
-
-	vShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
-	fShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
-
-	try
-	{
-		// open files
-		vShaderFile.open(vertexPath);
-		fShaderFile.open(fragmentPath);
-		std::stringstream vShaderStream, fShaderStream;
-		// read file's buffer contents into streams
-		vShaderStream << vShaderFile.rdbuf();
-		fShaderStream << fShaderFile.rdbuf();
-		// close file handlers
-		vShaderFile.close();
-		fShaderFile.close();
-		// convert stream into string
-		vertexCode = vShaderStream.str();
-		fragmentCode = fShaderStream.str();
-	}
-	catch (std::ifstream::failure e)
-	{
-		std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
-	}
+	std::string vertexCode = FileReader::ReadTextFile(vertexPath);
+	std::string fragmentCode = FileReader::ReadTextFile(fragmentPath);
 
 	DREAD_CORE_INFO("VERTEX CODE: \n{0}\n", vertexCode);
 	DREAD_CORE_INFO("FRAGMENT CODE: \n{0}\n", fragmentCode);
