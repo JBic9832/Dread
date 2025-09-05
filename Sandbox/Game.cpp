@@ -27,9 +27,9 @@ Game::Game(Dread::EventSystem& eventSystem)
 	sphere.AttachMesh(smr);
 	sphere.m_Transform.SetPosition(glm::vec3(1.0f, 1.0f, -2.0f));
 
-	objects["cube"] = cube;
-	objects["pyramid"] = pyramid;
-	objects["sphere"] = sphere;
+	objects.emplace("cube", cube);
+	objects.emplace("pyramid", pyramid);
+	objects.emplace("sphere", sphere);
 
 	Dread::ResourceManager::LoadShader(RESOURCES_PATH "basic_vert.glsl", RESOURCES_PATH "basic_frag.glsl", "basic");
 	shader = Dread::ResourceManager::GetShader("basic");

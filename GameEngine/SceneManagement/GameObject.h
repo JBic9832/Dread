@@ -9,6 +9,7 @@ namespace Dread {
 class GameObject {
 public:
 	GameObject();
+	~GameObject() = default;
 
 	void AttachMesh(MeshRenderer meshRenderer);
 	void DrawMesh();
