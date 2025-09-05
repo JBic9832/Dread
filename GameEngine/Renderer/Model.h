@@ -11,6 +11,9 @@ public:
 	Model(const std::string& file);
 
 private:
+	std::vector<unsigned char> getData();
+
+private:
 	const std::string& m_FileName;
 	std::vector<unsigned char> m_ModelData;
 	nlohmann::json m_JSON;

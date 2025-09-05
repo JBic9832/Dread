@@ -1,5 +1,6 @@
 #include "GltfLoader.h"
 #include "Core/Logger.h"
+#include "Core/FileReader.h"
 
 namespace Dread {
 
@@ -33,6 +34,13 @@ tinygltf::Model GLTFLoader::loadModel(const std::string& fileName) {
 	}
 
 	return model;
+}
+
+nlohmann::json GLTFLoader::parseJSONFromFile(const std::string& fileName) {
+	std::string fileContents = FileReader::ReadTextFile(fileName);
+	nlohmann::json json = nlohmann::json::parse(fileContents);
+
+	return json;
 }
 
 }
