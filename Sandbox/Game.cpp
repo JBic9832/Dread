@@ -18,6 +18,7 @@ Game::Game(Dread::EventSystem& eventSystem)
 	Dread::Cube cubeMesh;	
 	Dread::MeshRenderer cmr(cubeMesh.m_Mesh);
 	objects["cube"]->AttachMesh(cmr);
+	objects["cube"]->AttachBehavior<SinMove>();
 
 	Dread::Sphere sMesh;
 	Dread::MeshRenderer smr(sMesh.m_Mesh);
@@ -27,6 +28,7 @@ Game::Game(Dread::EventSystem& eventSystem)
 	Dread::Pyramid pyrMesh;
 	Dread::MeshRenderer pmr(pyrMesh.m_Mesh);
 	objects["pyramid"]->AttachMesh(pmr);
+	objects["pyramid"]->m_Transform.SetPosition(glm::vec3(-1.0f, 1.0f, -3.0f));
 	objects["pyramid"]->AttachBehavior<SinMove>();
 
 	Dread::ResourceManager::LoadShader(RESOURCES_PATH "basic_vert.glsl", RESOURCES_PATH "basic_frag.glsl", "basic");

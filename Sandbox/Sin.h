@@ -4,10 +4,13 @@
 
 class SinMove : public Dread::Behavior{
 public:
+	glm::vec3 initialPos = glm::vec3(0.0f);
 	void OnCreate() override {
-		gameObject->m_Transform.SetPosition(glm::vec3(-1.0f, 4.0f, -3.0f));
+		initialPos = gameObject->m_Transform.GetPosition();
 	}
 	void OnUpdate() override {
-		gameObject->m_Transform.SetPosition(glm::vec3(-1.0f, sin(Dread::Time::currentTime * 5), -3.0f));
+		float yOffset = sin(Dread::Time::currentTime * 5) + 1;
+		glm::vec3 newPos = glm::vec3(initialPos.x, initialPos.y + yOffset, initialPos.z);
+		gameObject->m_Transform.SetPosition(newPos);
 	}
 };

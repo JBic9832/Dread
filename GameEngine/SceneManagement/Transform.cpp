@@ -1,4 +1,5 @@
 #include "Transform.h"
+#include <glm/gtc/matrix_transform.hpp>
 
 namespace Dread {
 
@@ -10,6 +11,11 @@ Transform::Transform() {
 
 void Transform::SetPosition(const glm::vec3& newPos) {
 	m_Position = newPos;
+}
+
+void Transform::Translate(const glm::vec3& translate) {
+	m_Position += translate;
+
 }
 
 glm::vec3 Transform::GetPosition() const {
