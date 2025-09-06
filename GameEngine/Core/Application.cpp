@@ -9,7 +9,7 @@
 
 namespace Dread {
 
-Application::Application(EventSystem& eventSystem) : m_EventSystem { eventSystem }, m_Window(1260, 720, "Hello, World!", eventSystem), m_InputManager(eventSystem) {
+Application::Application(EventSystem& eventSystem, unsigned int width, unsigned int height) : m_EventSystem { eventSystem }, m_Window(width, height, "Hello, World!", eventSystem), m_InputManager(eventSystem) {
 	IMGUI_CHECKVERSION();
 	ImGui::CreateContext();
 	ImGuiIO &io = ImGui::GetIO();
@@ -20,6 +20,10 @@ Application::Application(EventSystem& eventSystem) : m_EventSystem { eventSystem
 }
 
 Application::~Application() {
+}
+
+glm::vec2 Application::GetApplicationWindowSize() const {
+	return glm::vec2
 }
 
 void Application::Run() {

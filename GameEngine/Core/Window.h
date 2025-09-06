@@ -3,6 +3,7 @@
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
 #include <string>
+#include <glm/vec2.hpp>
 
 #include "Event/EventSystem.h"
 
@@ -16,6 +17,7 @@ public:
 	bool ShouldClose() const;
 	void UpdateWindow() const;
 	GLFWwindow* WindowHandle() const;
+	glm::vec2 GetWindowSize() const;
 
 private:
 	GLFWwindow* m_WindowHandle;

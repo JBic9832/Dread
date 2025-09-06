@@ -10,7 +10,7 @@ namespace Dread {
 
 class Application {
 public: 
-	Application(EventSystem& eventSystem);
+	Application(EventSystem& eventSystem, unsigned int width, unsigned int height);
 	virtual ~Application();
 
 	void Run();
@@ -19,6 +19,7 @@ public:
 protected:
 	virtual void OnRender() = 0;
 	virtual void OnUpdate() = 0;
+	glm::vec2 GetApplicationWindowSize() const;
 	EventSystem& m_EventSystem;
 
 private:
