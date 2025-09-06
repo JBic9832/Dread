@@ -6,6 +6,7 @@
 #include "SceneManagement/GameObject.h"
 #include "SceneManagement/Camera.h"
 #include "Renderer/ResourceManager.h"
+#include <memory>
 
 class Game : public Dread::Application {
 public:
@@ -17,7 +18,7 @@ protected:
 	void OnUpdate() override;
 
 private:
-	std::unordered_map<std::string, Dread::GameObject> objects;
+	std::unordered_map<std::string, std::unique_ptr<Dread::GameObject>> objects;
 	Dread::Camera mainCamera;
 	Dread::Shader shader;
 

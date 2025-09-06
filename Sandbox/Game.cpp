@@ -6,30 +6,28 @@
 #include "Renderer/PrimitiveMeshes/Sphere.h"
 #include "Core/Time.h"
 #include "vendor/imgui/imgui.h"
+#include "Sin.h"
 
 Game::Game(Dread::EventSystem& eventSystem) 
 	: Dread::Application { eventSystem }
     , mainCamera(this->GetWindowHandle()) {
+	objects.emplace("cube", std::make_unique<Dread::GameObject>());
+	objects.emplace("pyramid", std::make_unique<Dread::GameObject>());
+	objects.emplace("sphere", std::make_unique<Dread::GameObject>());
+
 	Dread::Cube cubeMesh;	
 	Dread::MeshRenderer cmr(cubeMesh.m_Mesh);
-	Dread::GameObject cube;
-	cube.AttachMesh(cmr);
-
-	Dread::Pyramid pyrMesh;
-	Dread::MeshRenderer pmr(pyrMesh.m_Mesh);
-	Dread::GameObject pyramid;
-	pyramid.AttachMesh(pmr);
-	pyramid.m_Transform.SetPosition(glm::vec3(-1.0f, 4.0f, -3.0f));
+	objects["cube"]->AttachMesh(cmr);
 
 	Dread::Sphere sMesh;
 	Dread::MeshRenderer smr(sMesh.m_Mesh);
-	Dread::GameObject sphere;
-	sphere.AttachMesh(smr);
-	sphere.m_Transform.SetPosition(glm::vec3(1.0f, 1.0f, -2.0f));
+	objects["sphere"]->AttachMesh(smr);
+	objects["sphere"]->m_Transform.SetPosition(glm::vec3(1.0f, 1.0f, -2.0f));
 
-	objects.emplace("cube", cube);
-	objects.emplace("pyramid", pyramid);
-	objects.emplace("sphere", sphere);
+	Dread::Pyramid pyrMesh;
+	Dread::MeshRenderer pmr(pyrMesh.m_Mesh);
+	objects["pyramid"]->AttachMesh(pmr);
+	objects["pyramid"]->AttachBehavior<SinMove>();
 
 	Dread::ResourceManager::LoadShader(RESOURCES_PATH "basic_vert.glsl", RESOURCES_PATH "basic_frag.glsl", "basic");
 	shader = Dread::ResourceManager::GetShader("basic");
@@ -40,7 +38,10 @@ Game::~Game() {}
 
 void Game::OnUpdate() {
 	mainCamera.Update(this->GetWindowHandle(), Dread::Time::deltaTime);
-	objects["pyramid"].m_Transform.SetPosition(glm::vec3(-3.0f, sin(glfwGetTime() * 5), -3.0f));
+	for (auto& [key, go] : objects) {
+		go->Update();
+	}
+
 }
 
 void Game::OnRender() {
@@ -49,13 +50,13 @@ void Game::OnRender() {
 
 	for (auto& [key, go] : objects) {
 		model = glm::mat4(1.0f);
-		model = glm::translate(model, go.m_Transform.GetPosition());
+		model = glm::translate(model, go->m_Transform.GetPosition());
 
 		shader.Bind();
 		shader.SetUniformMatrix4f("uView", mainCamera.GetViewMatrix());
 		shader.SetUniformMatrix4f("uModel", model);
 		shader.SetUniformMatrix4f("uProjection", proj);
-		go.DrawMesh();
+		go->DrawMesh();
 	}
 }
 
