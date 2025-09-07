@@ -45,6 +45,10 @@ Window::Window(unsigned int width, unsigned int height, const std::string& windo
 	glfwSetCursorPosCallback(m_WindowHandle, glfwCursorPosCallback);
 }
 
+glm::vec2 Window::GetWindowSize() const {
+	return glm::vec2(m_Width, m_Height);
+}
+
 Window::~Window() {
 	glfwTerminate();
 }

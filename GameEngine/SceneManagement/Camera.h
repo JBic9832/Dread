@@ -18,7 +18,7 @@ namespace Dread {
 
 class Camera : public GameObject {
 public:
-	Camera(GLFWwindow* window);
+	Camera();
 
 	void Update(GLFWwindow* window, float deltaTime);
 

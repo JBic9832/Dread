@@ -8,9 +8,8 @@
 #include "vendor/imgui/imgui.h"
 #include "Sin.h"
 
-Game::Game(Dread::EventSystem& eventSystem) 
-	: Dread::Application { eventSystem }
-    , mainCamera(this->GetWindowHandle()) {
+Game::Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int height) 
+	: Dread::Application(eventSystem, width, height) { 
 	objects.emplace("cube", std::make_unique<Dread::GameObject>());
 	objects.emplace("pyramid", std::make_unique<Dread::GameObject>());
 	objects.emplace("sphere", std::make_unique<Dread::GameObject>());
@@ -63,5 +62,5 @@ void Game::OnRender() {
 }
 
 Dread::Application* CreateApplication(Dread::EventSystem& eventSystem) {
-	return new Game(eventSystem);
+	return new Game(eventSystem, 1240, 720);
 }

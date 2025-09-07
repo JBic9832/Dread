@@ -23,7 +23,7 @@ Application::~Application() {
 }
 
 glm::vec2 Application::GetApplicationWindowSize() const {
-	return glm::vec2
+	return m_Window.GetWindowSize();
 }
 
 void Application::Run() {

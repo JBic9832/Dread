@@ -7,12 +7,10 @@
 
 namespace Dread {
 
-Camera::Camera(GLFWwindow* window)
+Camera::Camera()
 {
-	int width, height;
-	glfwGetWindowSize(window, &width, &height);
-	m_LastMouseX = width / 2.0f;
-	m_LastMouseY = height / 2.0f;
+	m_LastMouseX = InputManager::GetMousePosition().x;
+	m_LastMouseY = InputManager::GetMousePosition().y;
 }
 
 void Camera::Update(GLFWwindow* window, float deltaTime)

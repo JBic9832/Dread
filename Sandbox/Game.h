@@ -10,7 +10,7 @@
 
 class Game : public Dread::Application {
 public:
-	Game(Dread::EventSystem& eventSystem);
+	Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int height);
 	~Game();
 
 protected:
