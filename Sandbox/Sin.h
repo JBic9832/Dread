@@ -1,6 +1,7 @@
 #include "SceneManagement/Scripting/Behavior.h"
 #include "SceneManagement/GameObject.h"
 #include "Core/Time.h"
+#include "Core/Logger.h"
 #include <random>
 
 class SinMove : public Dread::Behavior{
