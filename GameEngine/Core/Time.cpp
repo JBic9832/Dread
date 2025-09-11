@@ -13,7 +13,6 @@ void Time::Tick() {
 	currentTime = static_cast<float>(glfwGetTime());
 	deltaTime = currentTime - lastTime;
 	lastTime = currentTime;
-	
 }
 
 }

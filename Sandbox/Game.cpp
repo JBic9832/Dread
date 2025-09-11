@@ -42,7 +42,6 @@ void Game::OnUpdate() {
 	for (auto& [key, go] : objects) {
 		go->Update();
 	}
-
 }
 
 void Game::OnRender() {
