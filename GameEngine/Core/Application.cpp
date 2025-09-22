@@ -3,13 +3,15 @@
 #include "Logger.h"
 #include "Event/EventType.h"
 #include "Time.h"
+#include "glm/ext/matrix_clip_space.hpp"
 #include "vendor/imgui/imgui.h"
 #include "vendor/imgui/imgui_impl_opengl3.h"
 #include "vendor/imgui/imgui_impl_glfw.h"
+#include <glm/gtc/matrix_transform.hpp>
 
 namespace Dread {
 
-Application::Application(EventSystem& eventSystem, unsigned int width, unsigned int height) : m_EventSystem { eventSystem }, m_Window(width, height, "Hello, World!", eventSystem), m_InputManager(eventSystem) {
+Application::Application(EventSystem& eventSystem, unsigned int width, unsigned int height, ApplicationType appType) : m_EventSystem { eventSystem }, m_Window(width, height, "Hello, World!", eventSystem), m_InputManager(eventSystem) {
 	IMGUI_CHECKVERSION();
 	ImGui::CreateContext();
 	ImGuiIO &io = ImGui::GetIO();
@@ -17,6 +19,12 @@ Application::Application(EventSystem& eventSystem, unsigned int width, unsigned 
 	ImGui::StyleColorsDark();
 	ImGui_ImplGlfw_InitForOpenGL(m_Window.WindowHandle(), true);
 	ImGui_ImplOpenGL3_Init("#version 330");
+
+	if (appType == DREAD_APP_TYPE_2D) {
+		m_ApplicationProjectionMatrix = glm::ortho(0.0f, (float) width, (float) height, 0.0f, 0.1f, 100.0f);
+	} else {
+		m_ApplicationProjectionMatrix = glm::perspective(45.0f, (float) width / height, 0.1f, 1000.0f);
+	}
 }
 
 Application::~Application() {

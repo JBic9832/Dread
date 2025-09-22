@@ -8,8 +8,8 @@
 #include "vendor/imgui/imgui.h"
 #include "Sin.h"
 
-Game::Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int height) 
-	: Dread::Application(eventSystem, width, height) { 
+Game::Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int height, Dread::ApplicationType appType) 
+	: Dread::Application(eventSystem, width, height, appType) { 
 	objects.emplace("cube", std::make_unique<Dread::GameObject>());
 	objects.emplace("pyramid", std::make_unique<Dread::GameObject>());
 	objects.emplace("sphere", std::make_unique<Dread::GameObject>());
@@ -46,7 +46,6 @@ void Game::OnUpdate() {
 
 void Game::OnRender() {
 	glm::mat4 model = glm::mat4(1.0f);
-	glm::mat4 proj = glm::perspective(45.0f, 16.0f / 9.0f, 0.1f, 100.0f);
 
 	for (auto& [key, go] : objects) {
 		model = glm::mat4(1.0f);
@@ -55,11 +54,12 @@ void Game::OnRender() {
 		shader.Bind();
 		shader.SetUniformMatrix4f("uView", mainCamera.GetViewMatrix());
 		shader.SetUniformMatrix4f("uModel", model);
-		shader.SetUniformMatrix4f("uProjection", proj);
+		shader.SetUniformMatrix4f("uProjection", m_ApplicationProjectionMatrix);
 		go->DrawMesh();
 	}
 }
 
+// Use this to create your app
 Dread::Application* CreateApplication(Dread::EventSystem& eventSystem) {
-	return new Game(eventSystem, 1240, 720);
+	return new Game(eventSystem, 1240, 720, Dread::DREAD_APP_TYPE_3D);
 }
