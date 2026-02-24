@@ -1,11 +1,8 @@
 #include "Game.h"
-#include "InputManager/InputManager.h"
-#include "Core/Logger.h"
 #include "Renderer/PrimitiveMeshes/Cube.h"
 #include "Renderer/PrimitiveMeshes/Pyramid.h"
 #include "Renderer/PrimitiveMeshes/Sphere.h"
 #include "Core/Time.h"
-#include "vendor/imgui/imgui.h"
 #include "Sin.h"
 
 Game::Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int height, Dread::ApplicationType appType) 
