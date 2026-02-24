@@ -5,6 +5,7 @@
 #include "Renderer/MeshRenderer.h"
 #include "Core/Time.h"
 #include "Sin.h"
+#include "CameraController.hpp"
 
 Game::Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int height, Dread::ApplicationType appType) 
 	: Dread::Application(eventSystem, width, height, appType) { 
@@ -31,12 +32,13 @@ Game::Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int hei
 	Dread::ResourceManager::LoadShader(RESOURCES_PATH "basic_vert.glsl", RESOURCES_PATH "basic_frag.glsl", "basic");
 	shader = Dread::ResourceManager::GetShader("basic");
 	mainCamera.SetCameraPosition(glm::vec3(0.0, 1.0, 3.0));
+	mainCamera.AttachBehavior<CameraController>();
 }
 
 Game::~Game() {}
 
 void Game::OnUpdate() {
-	mainCamera.Update(this->GetWindowHandle(), Dread::Time::deltaTime);
+	mainCamera.UpdateCamera(this->GetWindowHandle(), Dread::Time::deltaTime);
 	for (auto& [key, go] : objects) {
 		go->Update();
 	}

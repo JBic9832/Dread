@@ -12,6 +12,8 @@ public:
 	void Translate(const glm::vec3& translate);
 	glm::vec3 GetPosition() const;
 	glm::vec3 GetScale() const;
+	glm::vec3 Forward() const;
+	glm::vec3 Up() const;
 
 private:
 	glm::vec3 m_Position;

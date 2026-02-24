@@ -3,7 +3,7 @@
 #include "Core/Time.h"
 #include <random>
 
-class SinMove : public Dread::Behavior{
+class SinMove : public Dread::Behavior {
 public:
 	glm::vec3 initialPos = glm::vec3(0.0f);
 	std::random_device rd;

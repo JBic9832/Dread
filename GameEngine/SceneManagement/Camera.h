@@ -20,7 +20,7 @@ class Camera : public GameObject {
 public:
 	Camera();
 
-	void Update(GLFWwindow* window, float deltaTime);
+	void UpdateCamera(GLFWwindow* window, float deltaTime);
 
 	glm::mat4 GetViewMatrix() const;
 	glm::vec3 GetCameraPosition() const;

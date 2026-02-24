@@ -22,4 +22,12 @@ glm::vec3 Transform::GetPosition() const {
 	return m_Position;
 }
 
+glm::vec3 Transform::Forward() const {
+	return glm::vec3(0.0f, 0.0f, -1.0f);
+}
+
+glm::vec3 Transform::Up() const {
+	return glm::vec3(0.0f, 1.0f, 0.0f);
+}
+
 }
