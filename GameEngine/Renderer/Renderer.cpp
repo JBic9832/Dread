@@ -16,6 +16,7 @@ void Renderer::initializeGlad() {
 	}
 
 	DREAD_CORE_TRACE("SUCCESS LOADING OPENGL BINDINGS");
+	glEnable(GL_MULTISAMPLE);
 }
 
 

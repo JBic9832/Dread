@@ -12,6 +12,7 @@
 namespace Dread {
 
 Application::Application(EventSystem& eventSystem, unsigned int width, unsigned int height, ApplicationType appType) : m_EventSystem { eventSystem }, m_Window(width, height, "Hello, World!", eventSystem), m_InputManager(eventSystem) {
+	// IMGUI Initialization
 	IMGUI_CHECKVERSION();
 	ImGui::CreateContext();
 	ImGuiIO &io = ImGui::GetIO();
@@ -36,9 +37,13 @@ glm::vec2 Application::GetApplicationWindowSize() const {
 
 void Application::Run() {
 	glEnable(GL_DEPTH_TEST);
+
 	bool cursorDisabled = true;
-	glfwSetCursorPos(m_Window.WindowHandle(), 1260 / 2, 720 / 2);
+
+	glm::vec2 windowSize = m_Window.GetWindowSize();
+	glfwSetCursorPos(m_Window.WindowHandle(), windowSize.x / 2, windowSize.y / 2);
 	glfwSetInputMode(m_Window.WindowHandle(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+
 	while (!m_Window.ShouldClose()) {
 		m_Window.UpdateWindow();
 

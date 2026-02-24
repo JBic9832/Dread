@@ -1,4 +1,5 @@
 #include "Window.h"
+#include "GLFW/glfw3.h"
 #include "Logger.h"
 
 #include "Event/EventType.h"
@@ -33,6 +34,7 @@ Window::Window(unsigned int width, unsigned int height, const std::string& windo
 	if (!glfwInit())
 		DREAD_CORE_ERROR("FAILED TO INITIALIZE GLFW!");
 
+	glfwWindowHint(GLFW_SAMPLES, 4);
 	m_WindowHandle = glfwCreateWindow(m_Width, m_Height, m_WindowName.c_str(), nullptr, nullptr);
 	if (!m_WindowHandle) {
 		glfwTerminate();
