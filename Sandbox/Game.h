@@ -2,7 +2,6 @@
 
 #include "Core/Application.h"
 #include "Event/EventSystem.h"
-#include "Renderer/MeshRenderer.h"
 #include "SceneManagement/GameObject.h"
 #include "SceneManagement/Camera.h"
 #include "Renderer/ResourceManager.h"

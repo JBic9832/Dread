@@ -2,6 +2,7 @@
 #include "Renderer/PrimitiveMeshes/Cube.h"
 #include "Renderer/PrimitiveMeshes/Pyramid.h"
 #include "Renderer/PrimitiveMeshes/Sphere.h"
+#include "Renderer/MeshRenderer.h"
 #include "Core/Time.h"
 #include "Sin.h"
 
