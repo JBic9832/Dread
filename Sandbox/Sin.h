@@ -1,7 +1,6 @@
 #include "SceneManagement/Scripting/Behavior.h"
 #include "SceneManagement/GameObject.h"
 #include "Core/Time.h"
-#include "Core/Logger.h"
 #include <random>
 
 class SinMove : public Dread::Behavior{
@@ -16,9 +15,6 @@ public:
 		gen = std::mt19937(rd());
 		std::uniform_int_distribution<> d(0, 5);
 		phaseShift = d(gen);
-
-		DREAD_INFO("Phase Shift: {0}", phaseShift);
-
 	}
 
 	void OnUpdate() override {

@@ -1,7 +1,4 @@
 #include "Application.h"
-#include <iostream>
-#include "Logger.h"
-#include "Event/EventType.h"
 #include "Time.h"
 #include "glm/ext/matrix_clip_space.hpp"
 #include "vendor/imgui/imgui.h"
