@@ -1,6 +1,7 @@
 #pragma once
 
 #include <glm/glm.hpp>
+#include <glm/gtc/quaternion.hpp>
 
 namespace Dread {
 
@@ -8,16 +9,12 @@ class Transform {
 public:
 	Transform();
 
-	void SetPosition(const glm::vec3& newPos);
 	void Translate(const glm::vec3& translate);
-	glm::vec3 GetPosition() const;
-	glm::vec3 GetScale() const;
 	glm::vec3 Forward() const;
 	glm::vec3 Up() const;
 
-private:
 	glm::vec3 m_Position;
-	glm::vec3 m_Rotation;
+	glm::quat m_Rotation;
 	glm::vec3 m_Scale;
 
 };

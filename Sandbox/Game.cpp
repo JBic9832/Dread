@@ -21,12 +21,12 @@ Game::Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int hei
 	Dread::Sphere sMesh;
 	Dread::MeshRenderer smr(sMesh.m_Mesh);
 	objects["sphere"]->AttachMesh(smr);
-	objects["sphere"]->m_Transform.SetPosition(glm::vec3(1.0f, 1.0f, -2.0f));
+	objects["sphere"]->m_Transform.m_Position = glm::vec3(1.0f, 1.0f, -2.0f);
 
 	Dread::Pyramid pyrMesh;
 	Dread::MeshRenderer pmr(pyrMesh.m_Mesh);
 	objects["pyramid"]->AttachMesh(pmr);
-	objects["pyramid"]->m_Transform.SetPosition(glm::vec3(-1.0f, 1.0f, -3.0f));
+	objects["pyramid"]->m_Transform.m_Position = glm::vec3(-1.0f, 1.0f, -3.0f);
 	objects["pyramid"]->AttachBehavior<SinMove>();
 
 	Dread::ResourceManager::LoadShader(RESOURCES_PATH "basic_vert.glsl", RESOURCES_PATH "basic_frag.glsl", "basic");
@@ -49,7 +49,7 @@ void Game::OnRender() {
 
 	for (auto& [key, go] : objects) {
 		model = glm::mat4(1.0f);
-		model = glm::translate(model, go->m_Transform.GetPosition());
+		model = glm::translate(model, go->m_Transform.m_Position);
 
 		shader.Bind();
 		shader.SetUniformMatrix4f("uView", mainCamera.GetViewMatrix());

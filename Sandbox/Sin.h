@@ -11,7 +11,7 @@ public:
 	int phaseShift;
 
 	void OnCreate() override {
-		initialPos = gameObject->m_Transform.GetPosition();
+		initialPos = gameObject->m_Transform.m_Position;
 		gen = std::mt19937(rd());
 		std::uniform_int_distribution<> d(0, 5);
 		phaseShift = d(gen);
@@ -20,6 +20,6 @@ public:
 	void OnUpdate() override {
 		float yOffset = sin(phaseShift + Dread::Time::currentTime * 5) + 1;
 		glm::vec3 newPos = glm::vec3(initialPos.x, initialPos.y + yOffset, initialPos.z);
-		gameObject->m_Transform.SetPosition(newPos);
+		gameObject->m_Transform.m_Position = newPos;
 	}
 };
