@@ -13,6 +13,9 @@ public:
 	Renderer();
 	~Renderer(){};
 
+	void BeginScene();
+	void EndScene();
+
 private:
 	void initializeGlad();
 };

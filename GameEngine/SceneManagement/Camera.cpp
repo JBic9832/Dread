@@ -1,14 +1,9 @@
 #include "Camera.h"
 
-#include "InputManager/InputManager.h"
-
 namespace Dread {
 
 Camera::Camera()
-{
-	m_LastMouseX = InputManager::GetMousePosition().x;
-	m_LastMouseY = InputManager::GetMousePosition().y;
-}
+{}
 
 void Camera::UpdateCamera(GLFWwindow* window, float deltaTime)
 {

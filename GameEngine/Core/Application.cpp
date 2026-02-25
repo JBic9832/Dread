@@ -59,12 +59,14 @@ void Application::Run() {
 		}
 
 		Time::Tick();
+		// Begin Frame
 		glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		OnUpdate();
 
 		OnRender();
 
+		// End frame
 		m_InputManager.EndFrame();
 		ImGui::Render();
 		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
