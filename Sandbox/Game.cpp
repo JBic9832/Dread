@@ -6,6 +6,9 @@
 #include "Core/Time.h"
 #include "Sin.h"
 #include "CameraController.hpp"
+//#include "glm/ext/quaternion_transform.hpp"
+#include "Spin.hpp"
+#include "glm/gtc/quaternion.hpp"
 
 Game::Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int height, Dread::ApplicationType appType) 
 	: Dread::Application(eventSystem, width, height, appType) { 
@@ -17,6 +20,7 @@ Game::Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int hei
 	Dread::MeshRenderer cmr(cubeMesh.m_Mesh);
 	objects["cube"]->AttachMesh(cmr);
 	objects["cube"]->AttachBehavior<SinMove>();
+	objects["cube"]->AttachBehavior<Spinner>();
 
 	Dread::Sphere sMesh;
 	Dread::MeshRenderer smr(sMesh.m_Mesh);
@@ -49,6 +53,10 @@ void Game::OnRender() {
 
 	for (auto& [key, go] : objects) {
 		model = glm::mat4(1.0f);
+
+		glm::mat4 rot = glm::mat4_cast(go->m_Transform.m_Rotation);
+		model = model * rot;
+
 		model = glm::translate(model, go->m_Transform.m_Position);
 
 		shader.Bind();
