@@ -22,6 +22,8 @@ public:
 	void Run();
 	GLFWwindow* GetWindowHandle() const;
 
+	Renderer& GetRenderer();
+
 protected:
 	virtual void OnRender() = 0;
 	virtual void OnUpdate() = 0;

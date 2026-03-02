@@ -1,8 +1,10 @@
 #include "GameObject.h"
+#include "Renderer/RequestHandler.h"
 
 namespace Dread {
 
 GameObject::GameObject() {
+	RequestHandler::ForwardRequestRegisterGameObject(*this);
 }
 
 void GameObject::Update() {

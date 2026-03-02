@@ -1,6 +1,12 @@
 #include "Application.h"
+#include "Renderer/Renderer.h"
+#include "Renderer/ResourceManager.h"
+#include "Renderer/Shader.h"
+#include "SceneManagement/GameObject.h"
 #include "Time.h"
 #include "glm/ext/matrix_clip_space.hpp"
+#include "glm/ext/matrix_transform.hpp"
+#include "glm/gtc/quaternion.hpp"
 #include "vendor/imgui/imgui.h"
 #include "vendor/imgui/imgui_impl_opengl3.h"
 #include "vendor/imgui/imgui_impl_glfw.h"
@@ -40,6 +46,7 @@ void Application::Run() {
 	glm::vec2 windowSize = m_Window.GetWindowSize();
 	glfwSetCursorPos(m_Window.WindowHandle(), windowSize.x / 2, windowSize.y / 2);
 	glfwSetInputMode(m_Window.WindowHandle(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+	Shader shader = ResourceManager::GetShader("basic");
 
 	while (!m_Window.ShouldClose()) {
 		m_Window.UpdateWindow();
@@ -64,6 +71,23 @@ void Application::Run() {
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		OnUpdate();
 
+		glm::mat4 model = glm::mat4(1);
+
+		for (GameObject& go : Renderer::GameObjectContainer) {
+			model = glm::mat4(1);
+
+			glm::mat4 rot = glm::mat4_cast(go.m_Transform.m_Rotation);
+			model = model * rot;
+
+			model = glm::translate(model, go.m_Transform.m_Position);
+
+			shader.Bind();
+			shader.SetUniformMatrix4f("uView", m_Renderer.GetMainCamera()->GetViewMatrix());
+			shader.SetUniformMatrix4f("uModel", model);
+			shader.SetUniformMatrix4f("uProjection", m_ApplicationProjectionMatrix);
+			go.DrawMesh();
+		}
+
 		OnRender();
 
 		// End frame
@@ -75,6 +99,10 @@ void Application::Run() {
 
 GLFWwindow* Application::GetWindowHandle() const {
 	return m_Window.WindowHandle();
+}
+
+Renderer& Application::GetRenderer() {
+	return m_Renderer;
 }
 
 }

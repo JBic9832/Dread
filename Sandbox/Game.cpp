@@ -4,11 +4,13 @@
 #include "Renderer/PrimitiveMeshes/Sphere.h"
 #include "Renderer/MeshRenderer.h"
 #include "Core/Time.h"
+#include "SceneManagement/Camera.h"
 #include "Sin.h"
 #include "CameraController.hpp"
 //#include "glm/ext/quaternion_transform.hpp"
 #include "Spin.hpp"
 #include "glm/gtc/quaternion.hpp"
+#include <memory>
 
 Game::Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int height, Dread::ApplicationType appType) 
 	: Dread::Application(eventSystem, width, height, appType) { 
@@ -35,36 +37,24 @@ Game::Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int hei
 
 	Dread::ResourceManager::LoadShader(RESOURCES_PATH "basic_vert.glsl", RESOURCES_PATH "basic_frag.glsl", "basic");
 	shader = Dread::ResourceManager::GetShader("basic");
-	mainCamera.SetCameraPosition(glm::vec3(0.0, 1.0, 3.0));
-	mainCamera.AttachBehavior<CameraController>();
+
+	mainCamera = std::make_shared<Dread::Camera>();
+	mainCamera->SetCameraPosition(glm::vec3(0.0, 1.0, 3.0));
+	mainCamera->AttachBehavior<CameraController>();
+
+	GetRenderer().RegisterCamera(mainCamera);
 }
 
 Game::~Game() {}
 
 void Game::OnUpdate() {
-	mainCamera.UpdateCamera(this->GetWindowHandle(), Dread::Time::deltaTime);
+	mainCamera->UpdateCamera(this->GetWindowHandle(), Dread::Time::deltaTime);
 	for (auto& [key, go] : objects) {
 		go->Update();
 	}
 }
 
 void Game::OnRender() {
-	glm::mat4 model = glm::mat4(1.0f);
-
-	for (auto& [key, go] : objects) {
-		model = glm::mat4(1.0f);
-
-		glm::mat4 rot = glm::mat4_cast(go->m_Transform.m_Rotation);
-		model = model * rot;
-
-		model = glm::translate(model, go->m_Transform.m_Position);
-
-		shader.Bind();
-		shader.SetUniformMatrix4f("uView", mainCamera.GetViewMatrix());
-		shader.SetUniformMatrix4f("uModel", model);
-		shader.SetUniformMatrix4f("uProjection", m_ApplicationProjectionMatrix);
-		go->DrawMesh();
-	}
 }
 
 // Use this to create your app

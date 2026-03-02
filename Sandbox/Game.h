@@ -18,8 +18,7 @@ protected:
 
 private:
 	std::unordered_map<std::string, std::unique_ptr<Dread::GameObject>> objects;
-	Dread::Camera mainCamera;
+	std::shared_ptr<Dread::Camera> mainCamera;
 	Dread::Shader shader;
-
 };
 Dread::Application* CreateApplication();

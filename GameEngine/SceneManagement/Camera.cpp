@@ -2,8 +2,8 @@
 
 namespace Dread {
 
-Camera::Camera()
-{}
+Camera::Camera() {
+}
 
 void Camera::UpdateCamera(GLFWwindow* window, float deltaTime)
 {
