@@ -1,4 +1,5 @@
 #include "Window.h"
+#include <glad/glad.h>
 #include "GLFW/glfw3.h"
 #include "Logger.h"
 
@@ -42,9 +43,17 @@ Window::Window(unsigned int width, unsigned int height, const std::string& windo
 	}
 
 	glfwMakeContextCurrent(m_WindowHandle);
+
 	glfwSetWindowUserPointer(m_WindowHandle, this);
 	glfwSetKeyCallback(m_WindowHandle, glfwKeyCallback);
 	glfwSetCursorPosCallback(m_WindowHandle, glfwCursorPosCallback);
+
+	int version = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+	if (!version) {
+		DREAD_CORE_ERROR("FAILED TO INITIALIZE GLAD");
+		return;
+	}
+	DREAD_CORE_TRACE("SUCCESS LOADING OPENGL BINDINGS");
 }
 
 glm::vec2 Window::GetWindowSize() const {

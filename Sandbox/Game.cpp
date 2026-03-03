@@ -7,9 +7,7 @@
 #include "SceneManagement/Camera.h"
 #include "Sin.h"
 #include "CameraController.hpp"
-//#include "glm/ext/quaternion_transform.hpp"
-#include "Spin.hpp"
-#include "glm/gtc/quaternion.hpp"
+#include "Renderer/ResourceManager.h"
 #include <memory>
 
 Game::Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int height, Dread::ApplicationType appType) 
@@ -21,8 +19,6 @@ Game::Game(Dread::EventSystem& eventSystem, unsigned int width, unsigned int hei
 	Dread::Cube cubeMesh;	
 	Dread::MeshRenderer cmr(cubeMesh.m_Mesh);
 	objects["cube"]->AttachMesh(cmr);
-	objects["cube"]->AttachBehavior<SinMove>();
-	objects["cube"]->AttachBehavior<Spinner>();
 
 	Dread::Sphere sMesh;
 	Dread::MeshRenderer smr(sMesh.m_Mesh);

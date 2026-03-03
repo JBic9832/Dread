@@ -3,7 +3,6 @@
 #include "Event/EventSystem.h"
 #include "Window.h"
 #include "Renderer/Renderer.h"
-#include "Renderer/TriangleTest.h"
 #include "InputManager/InputManager.h"
 #include <glm/glm.hpp>
 
@@ -34,7 +33,6 @@ protected:
 private:
 	bool m_Running = true;
 	Window m_Window;
-	Renderer m_Renderer;
 	InputManager m_InputManager;
 };
 

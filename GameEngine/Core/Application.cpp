@@ -4,6 +4,7 @@
 #include "Renderer/Shader.h"
 #include "SceneManagement/GameObject.h"
 #include "Time.h"
+
 #include "glm/ext/matrix_clip_space.hpp"
 #include "glm/ext/matrix_transform.hpp"
 #include "glm/gtc/quaternion.hpp"
@@ -82,7 +83,7 @@ void Application::Run() {
 			model = glm::translate(model, go.m_Transform.m_Position);
 
 			shader.Bind();
-			shader.SetUniformMatrix4f("uView", m_Renderer.GetMainCamera()->GetViewMatrix());
+			shader.SetUniformMatrix4f("uView", Renderer::GetInstance().GetMainCamera()->GetViewMatrix());
 			shader.SetUniformMatrix4f("uModel", model);
 			shader.SetUniformMatrix4f("uProjection", m_ApplicationProjectionMatrix);
 			go.DrawMesh();
@@ -102,7 +103,9 @@ GLFWwindow* Application::GetWindowHandle() const {
 }
 
 Renderer& Application::GetRenderer() {
-	return m_Renderer;
+	return Renderer::GetInstance();
 }
+
+
 
 }

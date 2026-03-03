@@ -1,6 +1,5 @@
 #include "Renderer.h"
 
-#include "Core/Logger.h"
 #include "SceneManagement/Camera.h"
 #include "SceneManagement/GameObject.h"
 #include <functional>
@@ -14,15 +13,12 @@ Renderer::Renderer() {
 	initializeGlad();
 }
 
-void Renderer::initializeGlad() {
-	int version = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-	if (!version) {
-		DREAD_CORE_ERROR("FAILED TO INITIALIZE GLAD");
-		return;
-	}
+Renderer& Renderer::GetInstance() {
+	static Renderer instance;
+	return instance;
+}
 
-	DREAD_CORE_TRACE("SUCCESS LOADING OPENGL BINDINGS");
-	glEnable(GL_MULTISAMPLE);
+void Renderer::initializeGlad() {
 }
 
 void Renderer::RegisterGameObject(GameObject &go) {

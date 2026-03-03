@@ -1,25 +1,24 @@
 #pragma once
 
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-
-#include <memory>
-#include <vector>
 #include "SceneManagement/Camera.h"
 #include "SceneManagement/GameObject.h"
+
+#include <GLFW/glfw3.h>
+#include <memory>
+#include <vector>
 #include <functional>
 
 namespace Dread {
 
 class Renderer {
 public:
-	Renderer();
-	~Renderer() {};
-
+	Renderer(const Renderer&) = delete;
 	void BeginScene();
 	void EndScene();
 
 	std::shared_ptr<Camera> GetMainCamera() const;
+
+	static Renderer& GetInstance();
 
 	static void RegisterGameObject(GameObject& go);
 	void RegisterCamera(std::shared_ptr<Camera> camera);
@@ -27,6 +26,9 @@ public:
 	static std::vector<std::reference_wrapper<GameObject>> GameObjectContainer;
 
 private:
+	Renderer();
+	~Renderer() {};
+
 	void initializeGlad();
 
 private:

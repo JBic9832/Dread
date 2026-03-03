@@ -4,7 +4,7 @@
 #include "Event/EventSystem.h"
 #include "SceneManagement/GameObject.h"
 #include "SceneManagement/Camera.h"
-#include "Renderer/ResourceManager.h"
+#include "Renderer/Shader.h"
 #include <memory>
 
 class Game : public Dread::Application {
