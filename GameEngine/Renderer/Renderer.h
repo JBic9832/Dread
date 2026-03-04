@@ -16,7 +16,7 @@ public:
 	void BeginScene();
 	void EndScene();
 
-	std::shared_ptr<Camera> GetMainCamera() const;
+	static std::shared_ptr<Camera> GetMainCamera();
 
 	static Renderer& GetInstance();
 
@@ -24,6 +24,7 @@ public:
 	void RegisterCamera(std::shared_ptr<Camera> camera);
 	// Maybe a better data structure for this
 	static std::vector<std::reference_wrapper<GameObject>> GameObjectContainer;
+	static void DrawScreenQuad();
 
 private:
 	Renderer();
@@ -32,7 +33,7 @@ private:
 	void initializeGlad();
 
 private:
-	std::shared_ptr<Camera> m_MainCamera;
+	static std::shared_ptr<Camera> s_MainCamera;
 };
 
 }

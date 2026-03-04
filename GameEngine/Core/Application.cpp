@@ -1,4 +1,6 @@
 #include "Application.h"
+#include "InputManager/InputManager.h"
+#include "Renderer/RenderPasses/GeometryPass.h"
 #include "Renderer/Renderer.h"
 #include "Renderer/ResourceManager.h"
 #include "Renderer/Shader.h"
@@ -14,6 +16,8 @@
 #include <glm/gtc/matrix_transform.hpp>
 
 namespace Dread {
+glm::mat4 Application::s_ApplicationProjectionMatrix{};
+glm::vec2 Application::s_WindowSize{};
 
 Application::Application(EventSystem& eventSystem, unsigned int width, unsigned int height, ApplicationType appType) : m_EventSystem { eventSystem }, m_Window(width, height, "Hello, World!", eventSystem), m_InputManager(eventSystem) {
 	// IMGUI Initialization
@@ -26,10 +30,12 @@ Application::Application(EventSystem& eventSystem, unsigned int width, unsigned 
 	ImGui_ImplOpenGL3_Init("#version 330");
 
 	if (appType == DREAD_APP_TYPE_2D) {
-		m_ApplicationProjectionMatrix = glm::ortho(0.0f, (float) width, (float) height, 0.0f, 0.1f, 100.0f);
+		s_ApplicationProjectionMatrix = glm::ortho(0.0f, (float) width, (float) height, 0.0f, 0.1f, 100.0f);
 	} else {
-		m_ApplicationProjectionMatrix = glm::perspective(45.0f, (float) width / height, 0.1f, 1000.0f);
+		s_ApplicationProjectionMatrix = glm::perspective(45.0f, (float) width / height, 0.1f, 1000.0f);
 	}
+
+	s_WindowSize = m_Window.GetWindowSize();
 }
 
 Application::~Application() {
@@ -49,9 +55,11 @@ void Application::Run() {
 	glfwSetInputMode(m_Window.WindowHandle(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	Shader shader = ResourceManager::GetShader("basic");
 
-	while (!m_Window.ShouldClose()) {
-		m_Window.UpdateWindow();
+	GeometryPass gPass{};
+	bool gPassEnable = false;
 
+	while (!m_Window.ShouldClose()) {
+		glfwPollEvents();
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGlfw_NewFrame();
 		ImGui::NewFrame();
@@ -72,24 +80,34 @@ void Application::Run() {
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		OnUpdate();
 
-		glm::mat4 model = glm::mat4(1);
+		if (InputManager::GetKeyDown(GLFW_KEY_1)) {
+			gPassEnable = !gPassEnable;
+		}
 
-		for (GameObject& go : Renderer::GameObjectContainer) {
-			model = glm::mat4(1);
+		if (gPassEnable) {
+			gPass.Render();
+		} else {
+			glm::mat4 model = glm::mat4(1);
 
-			glm::mat4 rot = glm::mat4_cast(go.m_Transform.m_Rotation);
-			model = model * rot;
+			for (GameObject& go : Renderer::GameObjectContainer) {
+				model = glm::mat4(1);
 
-			model = glm::translate(model, go.m_Transform.m_Position);
+				glm::mat4 rot = glm::mat4_cast(go.m_Transform.m_Rotation);
+				model = model * rot;
 
-			shader.Bind();
-			shader.SetUniformMatrix4f("uView", Renderer::GetInstance().GetMainCamera()->GetViewMatrix());
-			shader.SetUniformMatrix4f("uModel", model);
-			shader.SetUniformMatrix4f("uProjection", m_ApplicationProjectionMatrix);
-			go.DrawMesh();
+				model = glm::translate(model, go.m_Transform.m_Position);
+
+				shader.Bind();
+				shader.SetUniformMatrix4f("uView", Renderer::GetInstance().GetMainCamera()->GetViewMatrix());
+				shader.SetUniformMatrix4f("uModel", model);
+				shader.SetUniformMatrix4f("uProjection", s_ApplicationProjectionMatrix);
+				go.DrawMesh();
+			}
 		}
 
 		OnRender();
+
+		m_Window.UpdateWindow();
 
 		// End frame
 		m_InputManager.EndFrame();
@@ -106,6 +124,12 @@ Renderer& Application::GetRenderer() {
 	return Renderer::GetInstance();
 }
 
+glm::vec2 Application::GetWindowSize() {
+	return s_WindowSize;
+}
 
+glm::mat4 Application::GetProjectionMatrix() {
+	return s_ApplicationProjectionMatrix;
+}
 
 }
